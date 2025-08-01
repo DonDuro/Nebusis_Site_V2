@@ -1,0 +1,115 @@
+WizSpeek® Secure Messaging Platform - Deployment Instructions & Technical Summary
+TO: Daniel Zambrano, Chief Technology Officer, Nebusis Cloud Services, LLC
+FROM: Dr. Celso Alvarado, President, Nebusis Cloud Services, LLC
+DATE: July 7, 2025
+RE: WizSpeek® Messaging Platform - Final Deployment Guide
+
+EXECUTIVE SUMMARY
+The WizSpeek® secure messaging platform has completed development and is now ready for production deployment. Originally designed as an internal communication tool for Nebusis, the platform is now fully featured, secure, and suitable for both internal use and broader application.
+Current Status: READY FOR PRODUCTION
+Development: COMPLETE
+Testing: PENDING INTERNAL VALIDATION
+
+PLATFORM OVERVIEW
+Original Scope
+Secure communication tool for Nebusis staff
+Emphasis on end-to-end encryption and administrative control
+Features including group messaging, file sharing, and user access control
+Final Scope
+Internal use + commercial scalability
+Progressive Web App architecture with mobile and desktop support
+Enterprise-grade privacy and compliance
+
+TECHNICAL ARCHITECTURE
+Core Technologies
+Frontend: React 18, TypeScript, PWA
+Backend: Node.js, Express.js, WebSocket
+Database: PostgreSQL with Drizzle ORM
+Authentication: JWT with bcrypt hashing
+Real-Time Messaging: WebSocket server for instant communication
+Key Features
+Custom 13-option message interaction menu
+AI avatar generation, selfie capture, and uploads
+WizSpeek® Theme Studio (6 visual themes + wallpaper control)
+15GB encrypted file storage
+Accessibility options (screen reader, high contrast, etc.)
+Multi-language support with auto-translation (12 languages)
+SecureGroup™ private group management tools
+QR code-based device sync
+Encrypted voice messaging
+
+SECURITY AND COMPLIANCE
+End-to-end encrypted communications
+Zero use of infringing intellectual property
+Independent codebase and branding
+GDPR-compliant architecture
+Full audit trail for all user actions
+
+
+DEPLOYMENT STRATEGY
+Phase 1: Infrastructure Setup (Week 1)
+Server Configuration:
+4–8 CPU cores
+8–16GB RAM
+100–500GB SSD
+Ubuntu 20.04 LTS or later
+Database:
+PostgreSQL 14+
+SSL connections
+Automated backups
+Domain & SSL:
+Suggested Domain: wizspeak.nebusis.com
+SSL via Let’s Encrypt or commercial certificate
+Optional CDN: CloudFlare or AWS CloudFront
+Phase 2: Application Deployment (Week 1–2)
+Environment Variables:
+NODE_ENV=production
+DATABASE_URL=postgresql://user:password@host:5432/wizspeak
+JWT_SECRET=secure_random_string
+PORT=5000
+DOMAIN=wizspeak.nebusis.com
+Deployment Steps:
+git clone [repository_url]
+cd wizspeak
+npm install
+npm run build
+npm run db:push
+npm start
+Process Management:
+npm install -g pm2
+pm2 start npm --name "wizspeak" -- start
+pm2 save
+pm2 startup
+Phase 3: Security & Monitoring (Week 2)
+UFW firewall setup
+Enforced HTTPS (strong cipher suites)
+API rate limiting
+Cloudflare DDoS protection
+PostgreSQL access hardening
+Centralized logging and uptime monitoring
+Phase 4: User Rollout (Week 3)
+Internal Alpha Testing:
+Staff invite and onboarding
+Use of training material and feedback form
+QSI Validation Testing:
+Beta testing by QSI team
+Security and compliance audits
+Load and performance testing
+
+NEXT STEPS
+Immediate
+Provision infrastructure and begin deployment
+Conduct security and performance validations
+Finalize onboarding documentation for internal and QSI users
+
+Short-Term
+Complete all testing and issue resolution
+Plan for commercial preparation without financial exposure
+
+Contact:
+Dr. Celso Alvarado – calvarado@nebusis.com
+Repository and backups: /backups/v1/
+CONFIDENTIALITY NOTICE:
+This document is intended only for Nebusis internal use. Do not distribute outside authorized personnel.
+2025 © Nebusis Cloud Services, LLC – All Rights Reserved
+

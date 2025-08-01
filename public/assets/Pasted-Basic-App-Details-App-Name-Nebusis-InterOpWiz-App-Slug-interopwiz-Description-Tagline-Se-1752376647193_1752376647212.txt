@@ -1,0 +1,95 @@
+Basic App Details
+App Name: Nebusis® InterOpWiz
+
+App Slug: interopwiz
+
+Description/Tagline: "Seamless System Integration" - A comprehensive multilingual interoperability platform for secure, seamless integration between diverse systems across organizations.
+
+Category: compliance
+
+Status: live
+
+Visual Elements
+Icon: Zap (from lucide-react) - <Zap className="text-white" size={20} />
+
+Color Theme:
+
+Primary: Nebusis Blue (#3B82F6)
+Supporting: Tailwind CSS palette with dark/light mode support
+UI Theme: Professional with rounded corners and modern shadows
+Functional Details
+Features List
+Visual Integration Flow Designer - Drag-and-drop interface for building data integration workflows
+Universal Connector System - APIs, databases, and file systems support
+Field-Level Mapping Engine - Schema transformation with rules-based processing
+Real-Time Transaction Monitoring - Comprehensive audit trail and logging system
+Multilingual Support - English, Spanish, and French interface
+Role-Based Access Control - Admin, editor, and viewer permissions
+Rules-Based Notifications - Real-time alerts and notification system
+Compliance Traceability - Complete audit trails for regulatory compliance
+Dark/Light Theme Toggle - Modern responsive interface
+Advanced Security - JWT authentication with session management
+Pricing Tiers
+Starter
+
+Up to 5 integration flows
+Basic connectors (API, Database)
+Standard field mappings
+Email notifications
+Community support
+Single language support
+Pro
+
+Up to 50 integration flows
+Advanced connectors (File systems, Custom APIs)
+Complex field transformations
+Real-time notifications
+Priority support
+Multi-language interface
+Advanced audit logging
+Enterprise
+
+Unlimited integration flows
+Custom connector development
+Advanced rules engine
+Multi-tenant support
+24/7 dedicated support
+Custom compliance reporting
+SSO integration
+On-premise deployment options
+Target Industries
+Healthcare - Patient data integration, HIPAA compliance
+Financial Services - Transaction reconciliation, regulatory reporting
+Government - Inter-agency data sharing, compliance tracking
+Manufacturing - Supply chain integration, IoT data processing
+Retail/E-commerce - Inventory synchronization, order processing
+Education - Student information systems, grade reporting
+Technology - Multi-system data orchestration, API management
+Integration Capabilities
+System Types:
+
+REST APIs and GraphQL endpoints
+SQL databases (PostgreSQL, MySQL, SQL Server)
+NoSQL databases (MongoDB, Redis)
+File systems (FTP, SFTP, cloud storage)
+Enterprise systems (SAP, Salesforce, Oracle)
+Cloud platforms (AWS, Azure, Google Cloud)
+Data Formats:
+
+JSON, XML, CSV, Excel
+EDI, HL7, FHIR
+Custom format transformations
+Real-time streaming data
+Deployment Options:
+
+Cloud-hosted (SaaS)
+On-premise installation
+Hybrid deployment
+Container-based (Docker/Kubernetes)
+Security Features:
+
+End-to-end encryption
+Role-based access control
+OAuth 2.0 / SSO integration
+Audit logging and compliance reporting
+Data masking and anonymization

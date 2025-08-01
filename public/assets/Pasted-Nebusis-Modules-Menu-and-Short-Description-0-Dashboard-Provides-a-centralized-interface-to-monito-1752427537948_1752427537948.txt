@@ -1,0 +1,71 @@
+Nebusis Modules Menu and Short Description
+0. Dashboard
+Provides a centralized interface to monitor system activity, view alerts, and access key management system metrics.
+1. Organizational Structure
+1.1 The Organization
+Captures basic organizational data needed for system configuration and profile management.
+● 1.1.1 Organization Data Stores essential information such as the organization’s name, locations, and identifiers.
+1.2 Organizational Structure
+Facilitates the definition and maintenance of the organization’s functional structure.
+● 1.2.1 Areas/Departments Allows for registering and managing departments or areas within the organization.
+● 1.2.2 Organization Chart (Areas) Visualizes the hierarchy of functional areas.
+1.3 Positions
+Helps define the structure of job positions and responsibilities.
+● 1.3.1 Roles & Responsibilities Enables documenting the duties and functions assigned to each position.
+● 1.3.2 Organization Chart (Positions) Presents the relationships between positions in an organizational chart format.
+1.4 Personnel
+Provides tools for managing employee information, competencies, and evaluations.
+● 1.4.1 Personnel Management Allows for maintaining employee profiles and assignments.
+Nebusis Modules Menu and Short Description
+● 1.4.2 Competence Certificates Tracks certificates, qualifications, and training records.
+● 1.4.3 Evaluation Plans Supports planning of employee evaluations and performance reviews.
+● 1.4.4 Evaluation Management Facilitates tracking and documenting the results of evaluations.
+● 1.4.5 Collaborator Applications List Stores external collaborator applications for review and follow-up.
+2. Context of the Organization
+● 2.1 Strategic Issues Allows for identifying and documenting internal and external issues relevant to strategic objectives.
+● 2.2 Management System Scope Supports the definition and maintenance of the scope for each management system.
+● 2.3 Interested Parties Management Facilitates the identification of stakeholders and their needs and expectations.
+● 2.4 Compliance Obligations Enables tracking of applicable legal, regulatory, and contractual requirements.
+3. Risks and Opportunities
+● 3.1 Risks and Opportunities Management Provides a framework for identifying, evaluating, and tracking risks and opportunities.
+4. Products & Services
+● 4.1 Products & Services Management Facilitates documenting the organization’s products and services, including relevant attributes and life cycles.
+Nebusis Modules Menu and Short Description
+5. Infrastructure
+● 5.1 Add Infrastructure Enables recording of infrastructure assets and resources used to support operations.
+● 5.2 Maintain Infrastructure Allows for scheduling and tracking maintenance activities to ensure infrastructure availability and suitability.
+6. Processes
+● 6.1 Process Management Supports the definition, documentation, and monitoring of business processes.
+● 6.2 Procedures Management Facilitates the creation, organization, and control of standard operating procedures (SOPs).
+● 6.3 Performance Indicators Provides tools to monitor and analyze process performance.
+● 6.3.1 Performance Indicator Management Allows for defining, updating, and tracking KPIs and other performance metrics.
+7. Management System Policies
+7.1 Overall Policies
+Supports the creation and maintenance of high-level policies such as the Quality Policy or Environmental Policy.
+● Overall Policy Management Facilitates drafting, approval, and version control of overarching management system policies.
+7.2 Sub-Policies
+Allows for defining sub-policies tied to specific standard requirements (e.g., for purchasing, competence), which collectively form the Management System Manual for a given standard.
+Nebusis Modules Menu and Short Description
+● Sub-Policy Management Organizes and tracks individual policy statements mapped to standard clauses or operational areas.
+8. Documented Information
+● 8.1 Master List of Documents Provides a centralized tool for maintaining and controlling documented information such as procedures, forms, and records.
+9. Planning
+● 9.1 Objectives Management Facilitates setting, tracking, and reviewing management system objectives and targets.
+10. Project Management
+● 10.1 My Projects Allows users to create and monitor projects related to system implementation or improvement activities.
+11. Operational Improvement
+11.1 Incidents
+Provides tools to log, assess, and follow up on incidents impacting the management system.
+● 11.1.1 Report Incidents Allows users to report events that require attention or investigation.
+● 11.1.2 Incident Management Facilitates tracking, root cause analysis, and resolution of incidents.
+11.2 Actions
+Nebusis Modules Menu and Short Description
+Supports the initiation and monitoring of corrective, preventive, or improvement actions.
+● 11.2.1 Actions Assigned to Me Displays actions currently assigned to the logged-in user.
+● 11.2.2 Request Action Enables users to initiate a request for an action to be taken on a nonconformity or opportunity.
+12. Internal Audits
+● 12.1 Audit Scheduling Facilitates planning and scheduling of internal audits in line with audit programs.
+● 12.2 Audit Realization Facilitates the realization of audits by guiding users to record findings, evidence, and conclusions.
+● 12.3 Assigned Audit Management Tracks audit assignments, progress, and responsibilities.
+13. Meetings & Reviews
+● 13.1 Meetings & Reviews Details Allows for organizing, documenting, and following up on management reviews and operational meetings.

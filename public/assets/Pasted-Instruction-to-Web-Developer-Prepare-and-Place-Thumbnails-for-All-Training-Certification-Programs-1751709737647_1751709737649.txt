@@ -1,0 +1,68 @@
+Instruction to Web Developer: Prepare and Place Thumbnails for All Training & Certification Programs
+Please prepare and place custom thumbnail images for the Certified Prompt Engineering Specialist (CPES) program, as well as for all current and future training and certification programs offered through Nebusis Cloud Services, LLC and QSI Academy.
+
+✅ Task Overview:
+You are responsible for both:
+
+Designing and preparing the thumbnails, and
+
+Integrating and displaying them appropriately throughout the website.
+
+🎯 Requirements for Thumbnails
+1. Purpose:
+Thumbnails will be used on:
+
+Training catalog pages
+
+Program-specific landing pages
+
+Homepage sections
+
+Search results or listings
+
+Related course recommendations
+
+2. Design Specifications:
+Dimensions: 600x400 pixels (preferred 16:9 ratio)
+
+Format: WebP or optimized PNG
+
+Size: Under 200KB per image
+
+Naming: thumbnail-[program-name].webp (e.g., thumbnail-CPES.webp)
+
+3. Visual Content Guidelines:
+Each thumbnail must clearly represent the program’s theme:
+
+CPES: Use visuals such as chat bubbles, AI interfaces, natural language code, or certificate icons
+
+Others: Use appropriate symbols for each subject (e.g., shield for security, document for auditing, globe for sustainability)
+
+May include short overlay text or acronym (e.g., “CPES”, “ISO 9001”)
+
+Follow Nebusis® / QSI brand guidelines (color palette, font, style)
+
+🔧 Implementation Instructions
+Placement Responsibilities:
+Upload and embed the thumbnails directly into:
+
+Program/course overview pages
+
+Training and certification listing pages
+
+Featured and highlighted program areas (e.g., homepage or "Popular Courses")
+
+Ensure proper alt tags and SEO-friendly file names are applied
+
+Thumbnails must be responsive and optimized for both desktop and mobile viewing
+
+📁 Deliverables
+One optimized thumbnail per program (starting with CPES)
+
+A master folder containing all thumbnails
+
+List of placement URLs where thumbnails have been added
+
+Final review link or staging environment confirmation
+
+This is an ongoing requirement: you will continue to prepare and place thumbnails for all new programs as they are launched.

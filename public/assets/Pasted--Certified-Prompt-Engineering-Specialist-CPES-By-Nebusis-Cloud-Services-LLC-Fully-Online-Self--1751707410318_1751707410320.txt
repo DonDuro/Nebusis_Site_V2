@@ -1,0 +1,185 @@
+✅ Certified Prompt Engineering Specialist (CPES)
+By Nebusis Cloud Services, LLC
+Fully Online | Self-Paced | Total Duration: 16 Hours
+Includes Instructional Videos, Quizzes, Workshops, Assignments, and Optional Exam
+
+📘 Curriculum & Body of Knowledge
+🔹 Module 1: Foundations of Prompt Engineering & Generative AI
+📽️ Video Lecture (10 min)
+📝 Quiz (10 min)
+
+What is prompt engineering and why it matters
+
+Generative AI and how large language models (LLMs) work
+
+Natural language as interface: “Coding in English”
+
+Roles and industries using prompt engineering
+
+Benefits: accuracy, creativity, productivity, communication
+
+🔹 Module 2: Prompt Structures & Techniques
+📽️ Video Lecture (10 min)
+📝 Quiz (10 min)
+
+Prompt anatomy: goal, context, instruction, format, examples
+
+Techniques:
+
+Zero-shot
+
+One-shot
+
+Few-shot
+
+Chain-of-thought
+
+Role-playing
+
+Output control: temperature, tokens, top-p, etc.
+
+Prompting best practices and patterns
+
+🔹 Workshop 1: Improving and Testing Prompt Variations
+📽️ Video-Based Workshop (60 min)
+
+Compare ineffective vs. effective prompts
+
+Redesign flawed prompts using techniques from Module 2
+
+Run prompts through two or more models (e.g., ChatGPT, Claude)
+
+Analyze output differences and refine structure
+
+Use provided sandbox tools or free trials for testing
+
+🔹 Module 3: Prompting for Business, Content, and Productivity
+📽️ Video Lecture (10 min)
+📝 Quiz (10 min)
+
+Business writing (emails, reports, research summaries)
+
+Marketing (copywriting, SEO, personas, ads)
+
+Content generation (social media, blogs, branding)
+
+Knowledge work automation with structured outputs
+
+🔹 Module 4: Prompting for Technical, Educational, and Legal Use
+📽️ Video Lecture (10 min)
+📝 Quiz (10 min)
+
+Software development: code generation, debugging
+
+Data transformation and table output
+
+Educational tools: tutoring, test generation, summarization
+
+Legal and compliance: clauses, disclaimers, summaries
+
+🔹 Assignment 1: Prompt Design Portfolio
+📁 Project-Based Assignment (60 min)
+
+Create 5 high-quality prompts for different domains:
+
+Business
+
+Technical
+
+Marketing
+
+Educational
+
+Legal
+
+Each prompt must include goal, instruction, format, expected outcome
+
+Peer or self-review rubric included
+
+🔹 Module 5: Advanced Prompting Strategies
+📽️ Video Lecture (10 min)
+📝 Quiz (10 min)
+
+Prompt chaining
+
+ReAct prompting and Tree-of-Thoughts
+
+Instruction-following vs. conversation-based prompts
+
+Design for multi-step workflows
+
+Incorporating external tools and memory
+
+🔹 Module 6: Multi-Modal Prompting (Text + Visual)
+📽️ Video Lecture (10 min)
+📝 Quiz (10 min)
+
+Using image-capable LLMs
+
+Markdown, tables, HTML, and code formatting
+
+Visual prompting for slide design, diagrams, and image captions
+
+Mixed-modal inputs and outputs
+
+🔹 Workshop 2: Structured Prompting with Constraints & Roles
+📽️ Video-Based Workshop (60 min)
+
+Practice role-based prompts (e.g., "Act as a teacher...")
+
+Add formatting constraints (JSON, table, headline structure)
+
+Test tone, length, and language variations
+
+Reflect on prompt behavior and reproducibility
+
+🔹 Module 7: Ethical and Secure Prompting Practices
+📽️ Video Lecture (10 min)
+📝 Quiz (10 min)
+
+Ethical issues: hallucinations, bias, misinformation
+
+Prompt injection: types, risks, mitigation
+
+Privacy and data sensitivity
+
+Copyright and originality
+
+Corporate governance for AI usage
+
+🔹 Module 8: Prompting Tools, Platforms, and Ecosystems
+📽️ Video Lecture (10 min)
+📝 Quiz (10 min)
+
+Comparing platforms: ChatGPT, Claude, Gemini, LLaMA, Mistral
+
+Prompt APIs and CLI tools
+
+Version control and collaboration for prompt libraries
+
+Prompt metrics and testing utilities
+
+Prompting in production environments
+
+🔹 Assignment 2: Prompt-Based Automation Design
+📁 Project-Based Assignment (60 min)
+
+Select a real-world use case (e.g., content workflow, report generation)
+
+Design a chain of 2–3 connected prompts or iterations
+
+Define inputs, expected outputs, and control techniques
+
+Submit written documentation or a short video walkthrough
+
+🎓 Optional Final Exam – Certified Prompt Engineering Specialist (CPES)
+🕒 Duration: 90 minutes
+📄 Includes:
+
+30 multiple choice questions
+
+5 scenario-based analyses
+
+1 applied prompt development task
+🎯 Passing Score: 80%
+📜 Outcome: Certification + Digital Badge + Listing in CPES Registry

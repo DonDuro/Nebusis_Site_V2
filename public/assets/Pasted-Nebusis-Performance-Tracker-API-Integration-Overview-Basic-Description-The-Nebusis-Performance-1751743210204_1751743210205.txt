@@ -1,0 +1,178 @@
+Nebusis® Performance Tracker - API Integration Overview
+Basic Description
+The Nebusis® Performance Tracker is a comprehensive performance management platform that implements structured PDCA (Plan-Do-Check-Act) methodology for organizational performance tracking. It manages monthly performance reports, weekly activity logs, team supervision, and real-time progress monitoring across hierarchical organizational structures.
+
+Core Functionality
+PDCA Report Management: Monthly structured performance reports with file attachments
+Weekly Activity Tracking: Daily task logging with time spent and platform usage
+Supervisor Dashboard: Team performance monitoring and review capabilities
+Journey Tracking: Visual PDCA progress monitoring with phase-based completion
+Role Management: Organizational hierarchy with position-based permissions
+Notification System: Automated alerts for deadlines and overdue submissions
+Principal Data Inputs
+1. User Authentication Data
+{
+  "user_id": "string",
+  "email": "string", 
+  "first_name": "string",
+  "last_name": "string",
+  "role": "admin|supervisor|user",
+  "position_title": "string",
+  "department": "string",
+  "supervisor_id": "string",
+  "profile_image_url": "string"
+}
+2. PDCA Report Data
+{
+  "report_id": "string",
+  "user_id": "string",
+  "month": "YYYY-MM",
+  "plan_items": [
+    {
+      "objective": "string",
+      "do_actions": ["string"],
+      "check_criteria": ["string"],
+      "act_improvements": ["string"]
+    }
+  ],
+  "attachments": ["file_urls"],
+  "status": "draft|submitted|locked",
+  "submission_date": "datetime"
+}
+3. Weekly Activity Data
+{
+  "log_id": "string",
+  "user_id": "string",
+  "week_start": "YYYY-MM-DD",
+  "daily_activities": [
+    {
+      "date": "YYYY-MM-DD",
+      "tasks": [
+        {
+          "description": "string",
+          "time_spent": "decimal_hours",
+          "platform": "string",
+          "category": "string"
+        }
+      ]
+    }
+  ],
+  "status": "draft|submitted"
+}
+4. Position/Role Data
+{
+  "position_id": "string",
+  "title": "string",
+  "department": "string",
+  "supervisor_position_id": "string",
+  "responsibilities": ["string"],
+  "kpis": [
+    {
+      "name": "string",
+      "target": "string",
+      "measurement": "string"
+    }
+  ]
+}
+Principal Data Outputs
+1. Performance Analytics
+{
+  "user_id": "string",
+  "period": "YYYY-MM",
+  "completion_rates": {
+    "pdca_reports": "percentage",
+    "weekly_logs": "percentage",
+    "on_time_submissions": "percentage"
+  },
+  "progress_metrics": {
+    "plan_completion": "percentage",
+    "do_completion": "percentage", 
+    "check_completion": "percentage",
+    "act_completion": "percentage"
+  },
+  "performance_score": "decimal"
+}
+2. Team Dashboard Data
+{
+  "supervisor_id": "string",
+  "team_members": [
+    {
+      "user_id": "string",
+      "name": "string",
+      "position": "string",
+      "current_status": {
+        "pdca_status": "on_track|behind|overdue",
+        "weekly_log_status": "current|overdue",
+        "last_submission": "datetime"
+      },
+      "performance_trend": "improving|stable|declining"
+    }
+  ],
+  "team_metrics": {
+    "overall_completion": "percentage",
+    "overdue_count": "integer",
+    "avg_performance_score": "decimal"
+  }
+}
+3. Notification Data
+{
+  "notifications": [
+    {
+      "id": "string",
+      "user_id": "string",
+      "type": "deadline|overdue|review_required|system",
+      "title": "string",
+      "message": "string",
+      "priority": "high|medium|low",
+      "created_at": "datetime",
+      "read": "boolean",
+      "action_required": "boolean"
+    }
+  ]
+}
+4. Exported Reports
+{
+  "report_type": "individual|team|combined",
+  "period": "YYYY-MM",
+  "format": "pdf|excel|json",
+  "content": {
+    "summary_metrics": "object",
+    "detailed_data": "object",
+    "attachments": ["file_urls"]
+  },
+  "generated_at": "datetime",
+  "download_url": "string"
+}
+API Integration Endpoints
+Authentication Integration
+GET /api/auth/user - Current user profile
+POST /api/auth/sync - Sync user data from HR system
+PUT /api/auth/profile - Update user profile
+Data Synchronization
+GET /api/users/{user_id}/performance - User performance summary
+GET /api/teams/{supervisor_id}/dashboard - Team performance data
+POST /api/sync/positions - Bulk position/role updates
+POST /api/sync/users - Bulk user data synchronization
+Reporting & Analytics
+GET /api/reports/analytics/{user_id} - Individual analytics
+GET /api/reports/team/{supervisor_id} - Team analytics
+POST /api/reports/generate - Generate custom reports
+GET /api/notifications/{user_id} - User notifications
+HR System Integration Requirements
+Incoming Data Needs
+User Directory: Employee profiles, roles, reporting structure
+Organizational Chart: Department hierarchy and supervision relationships
+Position Definitions: Job titles, responsibilities, and KPIs
+Authentication: Single sign-on integration or user credential sync
+Outgoing Data Provides
+Performance Metrics: Individual and team performance scores
+Completion Rates: Report submission and deadline adherence
+Activity Tracking: Time spent and productivity metrics
+Goal Achievement: PDCA objective completion status
+Integration Architecture
+REST API: Standard HTTP endpoints with JSON payloads
+Authentication: JWT tokens or OAuth 2.0 integration
+Real-time Updates: Webhook support for immediate synchronization
+Bulk Operations: Batch processing for large data sets
+Rate Limiting: API throttling for system stability
+This structure allows the Performance Tracker to seamlessly integrate with broader HR systems while maintaining its specialized PDCA performance management capabilities.

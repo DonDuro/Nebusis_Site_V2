@@ -1,0 +1,127 @@
+PDCA Employee Guide - Simple Explanation
+What is PDCA and Why Do We Use It?
+PDCA stands for Plan-Do-Check-Act - it's a simple way to organize your work and make sure you're always improving. Think of it like a recipe for success that helps you plan your work, do it well, check if it worked, and then improve for next time.
+
+What Employees Enter in This App
+P - PLAN Section
+What you enter: Your goals and objectives for the month
+Why it matters: This helps you think ahead and be clear about what you want to achieve
+
+Example: "I want to improve customer response time by 20% this month"
+
+D - DO Section
+What you enter: The specific actions you'll take to reach your goals
+Why it matters: These are your action steps - the actual work you'll do
+
+Example:
+
+"Answer emails within 2 hours during business hours"
+"Create email templates for common questions"
+"Set up automatic email notifications"
+C - CHECK Section
+What you enter: How you'll measure if your actions worked
+Why it matters: This helps you know if you're succeeding or need to adjust
+
+Example:
+
+"Track average email response time weekly"
+"Count customer satisfaction scores"
+"Monitor number of complaints about slow responses"
+A - ACT Section
+What you enter: What you'll do differently next month based on what you learned
+Why it matters: This is how you keep getting better at your job
+
+Example:
+
+"If response time improved, keep using templates"
+"If still too slow, ask for additional staff training"
+"Share successful templates with the team"
+Why This System Helps You
+Clearer Goals: You know exactly what you're trying to achieve
+Better Planning: You think through how to reach your goals before starting
+Real Results: You measure your progress instead of just guessing
+Continuous Improvement: You learn from each month and get better
+Recognition: Your supervisor can see your thoughtful approach to work
+Weekly Activity Tracking
+What you enter: Daily tasks and time spent
+Why it matters: Helps you and your supervisor understand how you spend your time
+
+Example Daily Entry:
+
+"Responded to customer emails - 2 hours"
+"Team meeting - 1 hour"
+"Training on new software - 1.5 hours"
+Report Output Options
+For Employees:
+1. Individual Monthly Report
+What it shows: Your personal PDCA progress and achievements
+When you use it:
+
+Monthly performance reviews with your supervisor
+Personal development planning
+Job performance documentation
+Contains:
+
+Your monthly goals and how well you achieved them
+Time spent on different activities
+Progress on each PDCA phase
+Areas where you improved
+2. Personal Dashboard
+What it shows: Quick overview of your current status
+When you use it: Daily check-ins to stay on track
+Contains:
+
+Current month's progress
+Upcoming deadlines
+Recent achievements
+Areas needing attention
+3. Weekly Activity Summary
+What it shows: How you spent your time each week
+When you use it:
+
+Weekly planning sessions
+Time management improvements
+Understanding work patterns
+For Supervisors:
+4. Team Performance Report
+What it shows: How your entire team is performing
+When supervisors use it:
+
+Team meetings
+Resource allocation decisions
+Identifying who needs help or recognition
+5. Individual Employee Reviews
+What it shows: Detailed view of one employee's performance
+When supervisors use it:
+
+One-on-one meetings
+Performance evaluations
+Development planning
+6. Combined Organization Report
+What it shows: Overall company performance trends
+When leadership uses it:
+
+Strategic planning
+Department comparisons
+Company-wide improvements
+File Attachments
+What you can attach:
+
+Excel spreadsheets with your data
+PDF documents with evidence
+Photos of your work
+Certificates from training
+Why attachments help:
+
+Prove your achievements
+Share examples of good work
+Document your learning
+Show before/after improvements
+Simple Benefits for You
+Clear Expectations: You always know what's expected
+Fair Evaluations: Your performance is measured objectively
+Career Growth: Documented improvements help with promotions
+Less Stress: Organized approach makes work more manageable
+Recognition: Good work is clearly visible to supervisors
+Skill Development: You learn to plan and measure your own success
+The app essentially helps you become more organized, thoughtful, and successful in your work while making it easy for your supervisor to recognize and support your efforts.

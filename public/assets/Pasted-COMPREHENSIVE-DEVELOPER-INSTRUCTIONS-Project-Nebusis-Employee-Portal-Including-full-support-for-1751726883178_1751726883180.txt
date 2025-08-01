@@ -1,0 +1,139 @@
+COMPREHENSIVE DEVELOPER INSTRUCTIONS
+📌 Project: Nebusis® Employee Portal
+Including full support for contractual staff assignments to external organizations (QSI entities and other clients)
+
+🧩 1. KEY NEW REQUIREMENT
+Some Nebusis® employees, consultants, or project-based personnel are assigned to client organizations on a contract basis — particularly:
+
+QSI Academy
+
+QSI Auditing and Certification Services, LLC
+
+Other companies within the QSI Global Ventures ecosystem
+
+Third-party clients receiving managed services or technical leadership
+
+The portal must:
+
+Track assignment roles and duration
+
+Provide access to project/client-specific tools, SOPs, and documents
+
+Support separate reporting lines and KPIs for assigned roles
+
+Maintain compliance with Nebusis®’ own QMS, even while assigned externally
+
+🔧 2. ROUTE, STACK, AND INTEGRATION (UNCHANGED)
+Route: /employee
+
+Reuse existing architecture and UI components
+
+Add Assignment Management Layer to portal logic
+
+👥 3. USER ROLE ENHANCEMENT
+Role	Description
+assigned_contractor	Employee or contractor assigned to a client organization or QSI subsidiary
+assignment_supervisor	Manager from client company (e.g., QSI Academy director) who can view deliverables and approve reports
+dual_manager	Nebusis® executive overseeing staff performance while deployed
+
+Staff can simultaneously have:
+
+A Nebusis® internal role (e.g., employee_staff)
+
+An assigned client role (e.g., QSI Academy Coordinator)
+
+📦 4. NEW MODULE: “Client Assignment Center”
+This new section must appear in the Employee Portal for any user flagged as assigned_contractor.
+
+Features:
+View current and past assignments
+
+Client name
+
+Assignment title/role
+
+Start and end dates
+
+Assigned supervisor
+
+View assignment-specific documents
+
+Job descriptions
+
+SOPs
+
+Checklists
+
+Onboarding and offboarding materials
+
+Upload deliverables
+
+Submit timesheets (if assignment requires)
+
+Request role clarification or assignment extension
+
+📈 5. PERFORMANCE & KPI MANAGEMENT (CLIENT-SPECIFIC)
+Client-based KPIs must be tracked separately from internal KPIs:
+
+Tracked via Nebusis® PerformanceTracker
+
+Linked to assignment-specific outcomes and goals
+
+Supervisors (from QSI Academy, QSI Auditing, etc.) can:
+
+Approve task completion
+
+Submit performance feedback
+
+Flag concerns or training needs
+
+🧾 6. TIME & FINANCIAL REPORTING
+Timesheets must distinguish:
+
+Internal hours (Nebusis® operations)
+
+External assignment hours (client delivery)
+
+For finance roles:
+
+Billable work tied to Nebusis® SmartBooks® for invoicing clients
+
+Include cost center assignment and project code
+
+📂 7. ASSIGNMENT-SPECIFIC TOOL ACCESS
+Users assigned to external roles may need restricted access to client resources:
+
+Tool	Conditional Access
+Nebusis® Docs	Project-specific shared folders with client SOPs
+Nebusis® KnowledgeCheck®	Client-mandated training (QSI training modules)
+Nebusis® LegalFlow	Assignment contracts and NDAs
+Nebusis® ComplianceCore®	Audit protocols for assignments governed by ISO or QMS policies
+
+Client-specific folders or resources should be assigned dynamically per assignment profile.
+
+📬 8. CLIENT COMMUNICATION BRIDGE
+Enable structured communication with client supervisors:
+
+Message inbox or Q&A thread
+
+Upload status reports or timesheets
+
+Receive assignment updates and calendar events
+
+🛡️ 9. COMPLIANCE ENFORCEMENT
+All assignments must:
+
+Respect Nebusis®’ Quality Management System
+
+Follow client-specific compliance rules, if applicable
+
+Be audit-ready via Nebusis® ComplianceCore®
+
+QMS officers must be able to:
+
+View assignment-specific risks and controls
+
+Track deliverables and completion dates
+
+Ensure continuous QMS alignment
+

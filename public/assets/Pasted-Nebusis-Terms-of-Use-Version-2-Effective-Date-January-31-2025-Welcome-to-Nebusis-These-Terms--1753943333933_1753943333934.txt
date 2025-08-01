@@ -1,0 +1,169 @@
+Nebusis® Terms of Use
+Version: 2
+Effective Date: January 31, 2025
+
+Welcome to Nebusis®. These Terms of Use (“Terms”) govern your access to and use of all websites, platforms, applications, products, and services provided by Nebusis Cloud Services, LLC (“Nebusis”, “we”, “us”, or “our”), including but not limited to Nebusis® ComplianceOne, the Nebusis® Business Suite, and all affiliated applications.
+
+By accessing or using any Nebusis service, you agree to be bound by these Terms. If you do not agree, you must not access or use our services.
+
+1. Acceptance of Terms
+By using any Nebusis service, you confirm that:
+
+You are at least 18 years old or have legal capacity in your jurisdiction.
+
+You are authorized to bind the organization you represent.
+
+You agree to comply with all applicable laws and these Terms.
+
+2. Scope of Services
+Nebusis provides access to a suite of cloud-based enterprise applications, including:
+
+Nebusis® ComplianceOne (primary compliance and ISO automation platform)
+
+Nebusis® ControlCore
+
+Nebusis® CyberWatch
+
+Nebusis® Engage
+
+Nebusis® LegalFlow
+
+Nebusis® SmartBooks
+
+Nebusis® ZappFormZ
+
+Nebusis® Greenhouse Wizard
+
+Nebusis® ISO Management System Wizards
+
+Access may be provided via web portals, APIs, integrations, mobile interfaces, or licensed distribution channels.
+
+3. License and Access
+3.1 License Grant
+Subject to these Terms, Nebusis grants you a non-exclusive, non-transferable, and revocable license to access and use its services solely for your internal business purposes.
+
+3.2 Restrictions
+You agree not to:
+
+Reverse engineer, decompile, or disassemble any part of the software.
+
+Resell, rent, or sublicense the platform without written authorization.
+
+Use the services to compete with Nebusis or for illegal purposes.
+
+Attempt unauthorized access to other systems or data.
+
+4. User Responsibilities
+You agree to:
+
+Keep credentials secure and confidential.
+
+Ensure that data submitted to Nebusis is accurate and lawful.
+
+Use the services in compliance with all applicable laws and regulations.
+
+Report suspected security breaches or policy violations promptly.
+
+5. Intellectual Property
+All software, interfaces, branding, and proprietary content are owned by Nebusis Cloud Services, LLC or its licensors. This includes all components of the Nebusis® Business Suite, such as:
+
+Nebusis® ComplianceOne
+
+Nebusis® Management System Wizards
+
+Nebusis® dashboards, templates, and automation engines
+
+You may not copy, modify, create derivative works from, or exploit any part of the services without express written consent.
+
+Feedback or suggestions you provide may be used by Nebusis freely and without obligation.
+
+6. Third-Party Tools and Integrations
+Nebusis services may include integrations with third-party tools (e.g., AWS, Microsoft Azure, payment gateways). Use of such tools is governed by their respective terms. Nebusis is not responsible for third-party services, even if accessed via our platform.
+
+7. Subscription Terms and Termination
+7.1 Subscription and Fees
+Use of the platform may require a paid subscription. Payment terms, renewal conditions, and pricing will be defined in your commercial agreement.
+
+Fees are non-refundable unless otherwise stated.
+
+Late payments may incur penalties or service suspension.
+
+7.2 Termination
+We reserve the right to suspend or terminate access if:
+
+You breach these Terms.
+
+You fail to pay applicable fees.
+
+Continued use poses risk to security, performance, or compliance.
+
+Termination does not affect accrued rights or obligations. Upon termination, your access will be revoked, and your data may be deleted in accordance with our retention policy.
+
+8. Confidentiality
+All non-public information exchanged between you and Nebusis is considered confidential. Both parties agree not to disclose such information without written consent, except as required by law or regulation.
+
+This obligation survives termination of your use of the services.
+
+9. Data Ownership and Usage
+You retain all rights to the data you input or upload (“Customer Data”). By using the services, you grant Nebusis a limited license to use Customer Data solely to:
+
+Deliver contracted services
+
+Comply with legal obligations
+
+Improve system performance using aggregated, de-identified data
+
+Nebusis does not sell or disclose personal data to unauthorized third parties.
+
+10. Availability and Modifications
+We strive for high availability but cannot guarantee uninterrupted service. We may perform scheduled maintenance or implement updates at our discretion.
+
+Service features may evolve, change, or be deprecated over time. Your continued use indicates acceptance of such changes.
+
+11. Disclaimers
+Nebusis services are provided “as is” and “as available”, with no warranties of any kind. We do not guarantee:
+
+That the services will be error-free or always available.
+
+That they will meet every user’s specific needs.
+
+That all data will be preserved or retrievable.
+
+You assume full responsibility for using the platform in accordance with your organization’s requirements.
+
+12. Limitation of Liability
+To the fullest extent permitted by law:
+
+Nebusis is not liable for indirect, incidental, or consequential damages.
+
+Our total liability shall not exceed the fees paid by you during the 12 months preceding the claim.
+
+These limitations apply regardless of the legal theory of liability.
+
+13. Indemnification
+You agree to defend, indemnify, and hold harmless Nebusis, its officers, affiliates, employees, and agents from and against any third-party claims, damages, or liabilities arising from:
+
+Your breach of these Terms
+
+Your violation of applicable laws
+
+Your misuse of the services
+
+14. Governing Law and Dispute Resolution
+These Terms are governed by the laws of the State of Florida, USA, without regard to conflict-of-law principles.
+
+Any dispute shall be resolved through:
+
+Good-faith negotiations
+
+If unresolved, binding arbitration in Florida
+
+Litigation only if arbitration is deemed unenforceable or waived
+
+Each party shall bear its own legal costs unless otherwise awarded by the arbitrator.
+
+15. Changes to These Terms
+We may update these Terms from time to time. Updates will be posted on our website with the effective date indicated. Continued use of Nebusis services constitutes your agreement to the revised Terms.
+
+16. Contact
+For any questions or legal inquiries related to these Terms, please use the Contact section at www.nebusis.com.

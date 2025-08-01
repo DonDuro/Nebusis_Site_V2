@@ -1,0 +1,219 @@
+✅ COMPREHENSIVE DEVELOPER INSTRUCTIONS
+📌 Project: Nebusis® Partner Portal
+Module of the Nebusis® CommandDeck platform
+To be integrated immediately into the existing Nebusis® website infrastructure
+
+🔧 1. ARCHITECTURE & PLATFORM INTEGRATION
+Use the same tech stack and design components as:
+
+/admin portal
+
+/customer portal
+
+Integrate as a third protected route:
+
+bash
+Copy
+Edit
+/admin
+/customer
+/partner ✅ (new)
+Maintain shared:
+
+Layout
+
+Role-based access logic
+
+API structure
+
+Auth system
+
+Session management
+
+👥 2. ROLES & PERMISSION MANAGEMENT
+Add the following user roles:
+Role	Description
+partner_candidate	Limited access during onboarding (view only)
+authorized_rep	Can submit leads, view training, track commissions
+rbu_manager	Full access to local operations, clients, team, and performance
+rbu_support	Local assistant to manager (view/edit limited)
+partner_admin	HQ-level access to all partner operations
+
+All roles must be assigned and edited through the existing Admin Portal.
+
+🧱 3. CORE MODULES TO BUILD
+3.1. Partner Dashboard
+Personalized dashboard based on role
+
+Display:
+
+Leads
+
+Commission total (from SmartBooks®)
+
+Clients assigned (from Client360)
+
+Active training courses (from KnowledgeCheck®)
+
+Compliance and audit status (from ComplianceCore®)
+
+Performance metrics (from PerformanceTracker)
+
+3.2. Lead Management
+Submit, view, and update leads
+
+Track lead stages: submitted → assigned → won/lost
+
+Notification system for updates
+
+Admin access to approve/assign leads
+
+3.3. Commission Tracking (SmartBooks® Integration)
+Pull data from SmartBooks® to show:
+
+Commissions per lead
+
+Commission rate
+
+Payment status
+
+Reports exportable (PDF, CSV)
+
+3.4. Document Hub
+Upload/download:
+
+NDAs
+
+Partner contracts
+
+Territory agreements
+
+Training and branding assets
+
+Admin upload of shared materials
+
+Controlled access by user role and region
+
+3.5. Support & Requests
+Form to submit:
+
+Tech support
+
+Legal questions
+
+Pricing and sales requests
+
+Status tracker (open, assigned, resolved)
+
+Triage by RBU → escalate to Admin
+
+📈 4. PERFORMANCE SECTION (MANDATORY)
+A dedicated Performance tab must be included in the portal. It must:
+
+Pull live KPIs from PerformanceTracker
+
+Display:
+
+Revenue targets vs. actual
+
+Clients onboarded
+
+Training compliance
+
+Customer feedback scores
+
+Lead conversion rate
+
+Allow HQ to:
+
+Set minimum performance thresholds
+
+Flag underperformance
+
+Trigger compliance reviews if needed
+
+🧾 5. EMBEDDED BUSINESS SUITE ACCESS
+The portal must provide access (through iframe or authenticated redirect) to the following Nebusis® apps, based on user role.
+
+Required Apps to Embed
+App	Purpose	Users
+Client360	Client management & lifecycle tracking	Rep, RBU
+Engage	Sales funnel, campaign automation	Rep, RBU
+SmartBooks®	Financial reports, commission tracking	RBU
+PeopleCore	HR tools, time management	RBU
+PerformanceTracker	KPI dashboard, performance analysis	RBU, Admin
+KnowledgeCheck®	Training modules, exams, certification	All
+ComplianceCore®	QMS enforcement, audits, nonconformities	RBU, Admin
+LegalFlow	Contracts, legal files, compliance history	Admin, RBU
+Docs	Collaborative documents, checklists, templates	RBU, Admin
+
+My Apps Section
+Add a "My Apps" menu to the sidebar or dashboard with app icons that reflect each module licensed by the user.
+Only visible if the user has rights to use the app.
+
+🧪 6. COMPLIANCE ENFORCEMENT (QMS) VIA COMPLIANCECORE®
+Embed ComplianceCore® panels inside the Partner Portal
+
+Key capabilities to include:
+
+View compliance calendar
+
+Track open nonconformities
+
+Upload corrective actions
+
+View assigned internal audits and self-assessments
+
+Generate alerts for:
+
+Missed corrective action deadlines
+
+Failed audit scores
+
+QMS training not completed (linked to KnowledgeCheck®)
+
+This module ensures that each partner is following Nebusis®’ QMS framework and can be audited remotely.
+
+📊 7. ANALYTICS & ADMIN REPORTING
+HQ Admins must be able to:
+
+Monitor partner app usage
+
+See KPI trends per region/rep
+
+Export training completion data
+
+Audit lead handling and revenue reports
+
+Review compliance status of each partner
+
+Include flags and automated alerts for:
+
+Inactive partners
+
+Delayed report uploads
+
+Unused embedded apps
+
+Poor KPI performance
+
+🎨 8. DESIGN & UX GUIDELINES
+Maintain full consistency with /admin and /customer portals
+
+Use shared components, layout, colors, and fonts
+
+Fully responsive: desktop, tablet, mobile
+
+Branded Nebusis® favicon and logos
+
+🔐 9. SECURITY & ACCESS CONTROL
+Leverage the existing authentication system
+
+Ensure session management is scoped per role
+
+Block access to unauthorized modules or regions
+
+Record full audit trail of partner activity
+
+✅ 10. IMPLEMENTATION PRIORITY
+This Partner Portal is a mission-critical strategic module and must be implemented immediately. No phased rollout. All functionality and integrations listed above are required for launch.

@@ -1,0 +1,120 @@
+✅ WORDPRESS DEVELOPMENT INSTRUCTIONS FOR NEBUSIS.COM
+🔹 Platform & CMS
+The website must be developed using WordPress.
+
+Use a professional, flexible theme (such as Astra, Kadence, or Hello + Elementor) to support scalability and responsiveness.
+
+Elementor Pro or WPBakery may be used for visual page building, depending on your webmaster’s preference.
+
+Site must be SEO-optimized, mobile-first, and support multilingual plugins like WPML or TranslatePress for:
+
+English
+
+Spanish
+
+French
+
+Portuguese
+
+Arabic
+
+🛠️ FUNCTIONALITY & PLUGIN REQUIREMENTS
+Function	WordPress Solution / Plugin
+Stripe Payments	WooCommerce + Stripe Gateway
+Membership & Access Control	MemberPress or Restrict Content Pro
+Admin Dashboard	Custom / ACF-powered admin page, accessible at nebusis.com/admin
+Video Gallery	WP Video Gallery plugin or embedded Vimeo/YouTube
+Training + Certification	LearnDash or Tutor LMS Pro
+Licensing (SaaS modules)	WooCommerce Subscriptions + Custom Post Type for licenses
+Demo Activation Workflow	Gravity Forms + Webhooks + AI agent integration (optional via Zapier, n8n, or custom plugin)
+AI for Due Diligence	External API call from webhook trigger or integrated via custom plugin
+Auto Email Reminders	WP Mail SMTP + AutomatorWP / WP Fusion for workflows
+Multilingual Support	WPML or TranslatePress
+Document Upload & Management	Advanced Custom Fields (ACF) + WPForms or Gravity Forms
+
+🖥️ ADMIN PORTAL FUNCTIONALITY
+Access: https://nebusis.com/admin (password-protected)
+
+Admin will be able to:
+
+Upload/change:
+
+Videos
+
+Images
+
+Company logo
+
+Product documentation
+
+Event materials
+
+Add/edit:
+
+Text content
+
+Course materials
+
+New product descriptions
+
+Social media banners
+
+View:
+
+Leads/demos requested
+
+Purchase reports (via WooCommerce)
+
+Certification issued
+
+License activation logs
+
+🔐 SECURITY & BACKUPS
+Use Wordfence or Sucuri Security for firewall and malware protection.
+
+Set up automatic daily backups via UpdraftPlus or similar.
+
+Admin login protection via 2FA.
+
+🔄 AUTOMATIONS REQUIRED
+Action	Automation Trigger
+Certification generated	Completion of training module
+License expiry reminder	45 days before expiration (email via AutomatorWP or WP Fusion)
+Payment confirmation	Instant license activation (Stripe via WooCommerce)
+Demo request	Requires AI agent validation before approval
+New product launch	Admin can mark as "Coming Soon" or "Available" via backend toggle
+
+🧩 SITE STRUCTURE TO FOLLOW
+Home
+
+About Us
+
+Nebusis® Business Suite (overview)
+
+Individual Product Pages (16 apps)
+
+Digital Transformation Services
+
+Training & Certification
+
+Pricing
+
+Demos (Request Page)
+
+Video Gallery
+
+Blog / Insights
+
+Contact
+
+Admin Panel (private)
+
+🟨 VISUAL STYLE & DESIGN NOTES
+Clean, tech-driven design
+
+UI inspired by Google Workspace, SAP, and Microsoft Cloud portals
+
+Product/app cards on homepage
+
+Each page must use Nebusis® prefix before app names
+

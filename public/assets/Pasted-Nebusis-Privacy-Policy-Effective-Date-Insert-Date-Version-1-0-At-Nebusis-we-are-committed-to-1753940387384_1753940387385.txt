@@ -1,0 +1,204 @@
+Nebusis® Privacy Policy
+Effective Date: [Insert Date]
+Version: 1.0
+
+At Nebusis®, we are committed to protecting your privacy and ensuring responsible data management across all our platforms and services. This Privacy Policy outlines how we collect, use, share, retain, and secure information across the Nebusis® Business Suite, with a particular focus on our primary platform, Nebusis® ComplianceOne.
+
+1. Our Privacy Principles
+Your trust is essential. We design our services to follow international privacy laws and best practices, including transparency, accountability, purpose limitation, data minimization, and security-by-design.
+
+2. Applications and Coverage
+This policy applies to the full suite of Nebusis® software-as-a-service (SaaS) platforms, including:
+
+Nebusis® ComplianceOne (primary application)
+
+Nebusis® ISO 9001 Quality Management Wizard
+
+Nebusis® ISO 27001 Information Security Wizard
+
+Nebusis® ISO 42001 AI Management Wizard
+
+Nebusis® ControlCore
+
+Nebusis® CyberWatch
+
+Nebusis® SmartBooks
+
+Nebusis® LegalFlow
+
+Nebusis® Engage
+
+Nebusis® ZappFormZ
+
+Nebusis® Greenhouse Wizard
+
+and other applications in the Nebusis® Business Suite
+
+This policy also governs data collection via the Nebusis.com website and customer portals.
+
+3. What We Collect
+We collect various types of information depending on how you interact with us:
+
+User identifiers (names, roles, credentials)
+
+Organizational data (company name, location, certification status)
+
+Technical data (IP address, browser, device, telemetry)
+
+Behavioral data (usage patterns, access logs)
+
+Compliance content (policies, audit reports, documented procedures)
+
+4. Purpose of Data Use
+We use your data to:
+
+Deliver, support, and optimize services like Nebusis® ComplianceOne
+
+Enable AI-powered compliance automation and reporting
+
+Customize user experience and interface interactions
+
+Support legal and regulatory obligations
+
+Improve product functionality and security
+
+Manage contracts, accounts, and subscriptions
+
+We only process data for specific, legitimate purposes, based on legal grounds such as consent, performance of contract, or compliance with laws.
+
+5. Applicant and Personnel Data
+If you apply for a job, internship, or business relationship with Nebusis®, we collect application materials, background information, and interview notes solely for evaluation, hiring, or collaboration purposes.
+
+6. Hosting and Cloud Infrastructure Security
+Nebusis® does not operate its own data centers. Instead, we rely on trusted third-party cloud providers such as Amazon Web Services (AWS) for hosting. These providers ensure:
+
+Encryption of data in transit and at rest
+
+Physical and digital access control
+
+Redundancy and availability monitoring
+
+Independent certification to international security standards (e.g., ISO/IEC 27001)
+
+All data is logically separated, and administrative access is tightly restricted.
+
+7. Research and AI Model Development
+With client authorization or using de-identified data, Nebusis® may analyze system usage to train AI models, enhance rule engines, and improve products like Nebusis® ComplianceOne, Nebusis® Engage, and Nebusis® CyberWatch.
+
+No identifiable information is ever used for machine learning without explicit permission.
+
+8. Industry-Specific Privacy Controls
+Nebusis® solutions support regulated environments. For clients in healthcare, finance, government, or defense, we apply additional privacy safeguards aligned with:
+
+HIPAA
+
+ISO/IEC 27001
+
+ISO 42001
+
+GDPR
+
+Local regulatory requirements
+
+Custom configurations are available to meet your organization’s compliance mandates.
+
+9. Public Website and Portal Interactions
+When using our website or demo portals, we may collect limited information (e.g., page visits, device info, form submissions) for security and analytics purposes. This data is not shared or sold.
+
+10. Platform Monitoring and Performance
+All Nebusis® apps are continuously monitored to:
+
+Detect errors or outages
+
+Ensure service availability
+
+Identify usage trends
+
+Prevent misuse or unauthorized access
+
+Monitoring is non-invasive and excludes any user profiling.
+
+11. Global Data Transfers
+Your data may be stored or processed outside your country. Wherever it resides, Nebusis® enforces consistent privacy protections, using appropriate mechanisms such as:
+
+Standard Contractual Clauses (SCCs)
+
+Data Processing Agreements (DPAs)
+
+Vendor audits and risk assessments
+
+12. Automated Decision-Making and AI Use
+Some Nebusis® features use algorithms to analyze data and offer recommendations (e.g., audit scoring, risk indicators). However, no automated decision leads to legal or contractual outcomes without human review.
+
+13. Third-Party Services and Integrations
+Nebusis® apps may connect to third-party tools (e.g., eSignature platforms, payment processors). We ensure all vendors follow strict privacy and security protocols, and we disclose integrations clearly when they impact your data.
+
+14. Confidentiality and ISO Framework Alignment
+We uphold strong confidentiality obligations in accordance with ISO/IEC standards and our internal compliance framework. All data is handled in accordance with customer agreements and never shared without legal basis or client instruction.
+
+15. Age Limitations
+Nebusis® services are intended for business use by adults. We do not knowingly collect or process information from individuals under the age of 16.
+
+16. Cookies and Tracking Technologies
+We use cookies and related technologies to:
+
+Keep users logged in securely
+
+Monitor application performance
+
+Understand visitor behavior on Nebusis.com
+
+Users can manage cookie preferences through their browser or by adjusting settings on our website.
+
+17. Retention and Data Disposal
+We keep your data only as long as necessary for:
+
+Active contracts
+
+Legal compliance
+
+Audit trails
+
+Dispute resolution
+
+Upon contract termination or user request, data may be deleted, anonymized, or returned, based on your preference and legal rights.
+
+18. Your Rights
+Depending on your jurisdiction, you may have the right to:
+
+Access your personal or organization-related data
+
+Request correction of inaccuracies
+
+Request deletion or restriction of use
+
+Object to processing or withdraw consent
+
+Receive your data in a portable format
+
+To submit a request, visit the Contact section of www.nebusis.com.
+
+19. Breach Response and Notification
+In case of a suspected data breach, Nebusis® activates its incident response plan to:
+
+Contain the event
+
+Notify affected parties promptly (as required by law)
+
+Cooperate with regulatory authorities
+
+Apply remediation and root cause fixes
+
+20. Contact and Inquiries
+All questions or requests related to this Privacy Policy should be submitted via the Contact section of www.nebusis.com. This ensures secure and traceable handling by the appropriate team.
+
+21. Updates to This Policy
+We may update this Privacy Policy periodically. When we do, we will:
+
+Post a notice on www.nebusis.com
+
+Indicate the effective date at the top of this document
+
+Where required, provide direct notification through platform banners or messages
+
+Your continued use of Nebusis® services indicates acceptance of the revised terms.

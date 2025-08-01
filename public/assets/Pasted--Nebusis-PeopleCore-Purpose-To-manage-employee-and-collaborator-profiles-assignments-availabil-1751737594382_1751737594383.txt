@@ -1,0 +1,127 @@
+👥 Nebusis® PeopleCore
+Purpose: To manage employee and collaborator profiles, assignments, availability, time tracking, and HR lifecycle functions — all aligned with compliance and performance across internal teams and external contract roles.
+
+🔑 Core Modules & Features
+1. 📇 Personnel Profiles & Role Management
+Centralized records for all employees, collaborators, and contractors
+
+Custom fields for:
+
+Full legal name, ID, contact info, nationality
+
+Assigned role(s), department, manager/supervisor
+
+Employment type (Full-Time, Part-Time, External Assignment)
+
+Contract status and expiration
+
+Language preference
+
+Uploads for documents (CV, certifications, ID, licenses)
+
+2. 🗂️ Assignment Tracking
+Link staff to internal projects or external assignments (e.g., QSI Academy)
+
+Role-based assignment visibility
+
+Auto-notifications for start/end dates, renewals, or deliverables
+
+Integration with:
+
+Nebusis® SmartBooks® (for assignment billing)
+
+Nebusis® LegalFlow (for signed agreements)
+
+3. 🕒 Time Tracking
+Daily or portion-of-day logging (e.g., 1.0, 0.5, 0.25)
+
+Categorization: Work, PTO, Training, Travel, Admin
+
+Weekly and monthly calendar views
+
+Assignment-based time allocation
+
+Approval workflows by supervisor or project manager
+
+Integrated with Nebusis® SmartBooks® for cost center/billable tagging
+
+4. 📆 Leave & Availability Management
+PTO tracking: balance, accrual, usage
+
+Submit and approve time-off requests
+
+Public holiday and personal leave calendars
+
+Absence reporting and overlap detection
+
+Leave policy automation (per country or contract type)
+
+5. 📊 Workforce Analytics & Reports
+Headcount by department, location, and role
+
+Contract expiration forecasts
+
+Leave trends, time utilization, and workforce allocation
+
+Exportable to CSV, Excel, or JSON
+
+Role compliance summaries (e.g., required certifications)
+
+6. ✅ Onboarding & Offboarding Workflow
+Checklist for each phase (documents, trainings, tools access)
+
+Role-based provisioning (auto-enroll to apps, courses)
+
+End-of-assignment process tracking
+
+Flags incomplete onboarding or overdue terminations
+
+Integration with Nebusis® KnowledgeCheck® and Nebusis® Docs
+
+7. 🧾 Contract Lifecycle Management (via LegalFlow Integration)
+Store, tag, and track:
+
+Employment agreements
+
+Assignment contracts
+
+NDAs and renewals
+
+View expiration dates and required updates
+
+Access controlled by HR, legal, and assigned managers
+
+8. 🛡️ Role-Based Access and Compliance Monitoring
+Set access levels per user type
+
+Track who has completed training, passed probation, or obtained certification
+
+Audit log for profile edits, approvals, and status changes
+
+Compliance flags for:
+
+Expired contracts
+
+Missing documents
+
+Incomplete onboarding
+
+9. 🔗 System Integration with Nebusis® Business Suite
+Integrated with:
+
+Nebusis® PerformanceTracker (for individual KPIs)
+
+Nebusis® KnowledgeCheck® (for training)
+
+Nebusis® SmartBooks® (for financial control and billing)
+
+Nebusis® LegalFlow (for contracts)
+
+Nebusis® ComplianceCore® (for QMS-related roles and audits)
+
+✅ Unique Strengths of Nebusis® PeopleCore
+Designed to manage both traditional employees and externally assigned collaborators
+
+Optimized for ISO-aligned environments with QMS compliance tracking
+
+Built to support global teams and contract flexibility, ideal for service firms, academic units, and project-based consulting operations

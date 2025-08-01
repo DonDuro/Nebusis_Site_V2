@@ -1,0 +1,89 @@
+under a section titled “Pricing & Instant Quote” within the main website navigation bar, and also embedded on relevant app-specific pages (e.g., Nebusis® ComplianceCore product page).
+
+🔧 Functionality to Develop:
+Interactive Pricing Calculator (WordPress-Compatible Plugin):
+
+Users select:
+
+First standard or compliance module (dropdown)
+
+Number of users
+
+Additional standards/modules (optional multi-select)
+
+Desired training (yes/no + # of days or half-days)
+
+Pricing adjusts automatically based on selections
+
+All pricing logic must reflect the rules provided above
+
+Include notes below the calculator stating that bulk/custom implementations will receive a special quote
+
+Auto-Generated Quote:
+
+After user finalizes selection:
+
+Show full breakdown (setup fee, license fee, training fee, total)
+
+Allow download of a PDF quote with a unique quote number
+
+Store quote history for logged-in users in a “My Quotes” section
+
+Direct Purchase & Checkout (Stripe Integration):
+
+Allow user to proceed from quote to checkout
+
+Support:
+
+Credit card via Stripe
+
+Annual billing only
+
+Option to include training sessions in cart
+
+Generate order confirmation + send via email
+
+Assign license keys upon payment confirmation (initially just via email)
+
+License Renewal System:
+
+Trigger automatic renewal notices at:
+
+60 days before expiration
+
+45 days before expiration
+
+15 days before expiration
+
+Renewal page shows upcoming license(s) expiring and allows auto-renew via Stripe
+
+Admin Settings Panel:
+
+Admin should be able to:
+
+Update pricing (setup fees, license fees, training)
+
+Modify text and disclaimers
+
+Access orders and quotes dashboard
+
+Adjust taxes/fees for different regions if required
+
+🛠️ Technical Notes:
+Must be fully compatible with WordPress
+
+Use shortcodes or custom Gutenberg blocks so it can be placed inside any page easily
+
+Stripe integration must use secure API and follow PCI compliance
+
+Quote generator must be styled consistently with rest of Nebusis.com
+
+PDF generator must include:
+
+Nebusis® logo and address
+
+Timestamp
+
+Quote breakdown
+
+Quote ID

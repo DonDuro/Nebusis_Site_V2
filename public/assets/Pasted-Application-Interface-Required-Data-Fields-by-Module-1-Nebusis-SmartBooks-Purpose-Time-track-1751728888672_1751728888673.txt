@@ -1,0 +1,258 @@
+Application Interface: Required Data Fields by Module
+1. 💸 Nebusis® SmartBooks®
+Purpose: Time tracking, assignment-based billing, expense records
+
+Required Fields:
+EmployeeID
+
+FullName
+
+AssignmentID (Internal or External)
+
+ClientOrDepartment
+
+Date
+
+TimeWorkedFraction (values: 1.0, 0.75, 0.5, 0.25, 0)
+
+ActivityType (Work, Travel, Training, PTO, Admin)
+
+ExpenseCategory (optional: Travel, Meals, Lodging)
+
+ExpenseAmount (if applicable)
+
+Billable (Yes/No)
+
+ApprovedBy
+
+ApprovalStatus (Pending, Approved, Rejected)
+
+SubmissionDate
+
+ApprovalDate
+
+2. 📈 Nebusis® PerformanceTracker
+Purpose: Monitor employee, project, and assignment KPIs
+
+Required Fields:
+EmployeeID
+
+AssignmentID (linked to QSI or internal project)
+
+KPIName
+
+KPIType (Quantitative, Qualitative)
+
+TargetValue
+
+ActualValue
+
+MeasurementUnit (Days, %, Tasks, Score, etc.)
+
+PeriodStartDate
+
+PeriodEndDate
+
+ReviewStatus (Pending, Reviewed)
+
+ReviewedBy
+
+ReviewDate
+
+Notes (optional)
+
+3. 🛡️ Nebusis® ComplianceCore®
+Purpose: Quality Management System adherence, audit readiness
+
+Required Fields:
+EmployeeID
+
+ProcessID
+
+QMSResponsibility (Yes/No)
+
+NonconformityID (if reported or involved)
+
+CorrectiveActionRequired (Yes/No)
+
+CorrectiveActionStatus (Open, In Progress, Closed)
+
+AuditID
+
+AuditRole (Auditee, Internal Auditor, Witness)
+
+ComplianceStatus (Compliant, Needs Attention, Non-Compliant)
+
+LastQMSTrainingDate
+
+AssignedQMSOfficerID
+
+4. 🧠 Nebusis® KnowledgeCheck®
+Purpose: Training, testing, certification compliance
+
+Required Fields:
+EmployeeID
+
+CourseID
+
+CourseName
+
+CourseCategory (Onboarding, ISO, Security, Technical, Assignment-Specific)
+
+EnrollmentDate
+
+CompletionDate
+
+Score
+
+PassStatus (Passed/Failed)
+
+CertificationIssued (Yes/No)
+
+CertificateExpirationDate (if applicable)
+
+NextRequiredTrainingDate
+
+5. 📂 Nebusis® Docs
+Purpose: Document access, SOPs, assignment deliverables, internal collaboration
+
+Required Fields:
+DocumentID
+
+DocumentTitle
+
+DocumentType (SOP, Policy, Template, Assignment Deliverable)
+
+ProjectOrAssignmentID
+
+UploadedBy
+
+UploadDate
+
+LastModifiedDate
+
+AccessGroup (Team, Assignment, Manager, All Staff)
+
+ApprovalRequired (Yes/No)
+
+ApprovalStatus
+
+ReviewedBy
+
+6. 👥 Nebusis® PeopleCore
+Purpose: HR profiles, work history, availability, time off, assignments
+
+Required Fields:
+EmployeeID
+
+FullName
+
+Email
+
+Phone
+
+Nationality
+
+Region/Country
+
+JobTitle
+
+SupervisorID
+
+StartDate
+
+EmploymentType (Full-Time, Part-Time, Contractor, External Assignment)
+
+AssignmentStatus (Unassigned, Internally Assigned, Externally Assigned)
+
+ContractEndDate (if applicable)
+
+PTOBalance
+
+PTORequestedDates
+
+Status (Active, On Leave, Ended)
+
+7. 🧾 Nebusis® LegalFlow
+Purpose: Contract management for employees and assignments
+
+Required Fields:
+EmployeeID
+
+DocumentID
+
+DocumentType (Employment Contract, Assignment Agreement, NDA)
+
+SignedDate
+
+ExpirationDate
+
+DocumentStatus (Draft, Signed, Expired)
+
+PartyName (QSI Academy, QSI Auditing, External Client)
+
+RenewalRequired (Yes/No)
+
+SignedBy
+
+StorageLink (document file reference)
+
+8. 📇 Nebusis® Client360
+Purpose: For externally assigned employees to track client-related work
+
+Required Fields:
+EmployeeID
+
+ClientID
+
+ClientName
+
+AssignmentID
+
+RoleAtClient
+
+AssignmentStartDate
+
+AssignmentEndDate
+
+AssignedSupervisorAtClient
+
+DeliverablesSubmitted
+
+ClientFeedbackScore
+
+ActiveStatus (Yes/No)
+
+9. 🔄 Nebusis® Engage
+Purpose: Task tracking, internal project participation, campaign-related duties
+
+Required Fields:
+EmployeeID
+
+TaskID
+
+TaskTitle
+
+AssignedBy
+
+StartDate
+
+DueDate
+
+CompletionStatus (Not Started, In Progress, Completed)
+
+PriorityLevel
+
+ProjectOrCampaignID
+
+Notes
+
+🔐 Shared Metadata Fields (for all modules)
+Field	Purpose
+EmployeeID	Universal unique identifier
+UserRole	Determines access in portal and across apps
+AssignmentID	Tracks internal or external assignments
+AssignedOrganization	Nebusis®, QSI Academy, QSI Auditing, etc.
+CreatedBy / ModifiedBy	User or system responsible
+Timestamps	Full audit trail for any interaction
+AttachmentLink	Optional file, receipt, certificate, or doc reference

@@ -1,0 +1,237 @@
+✅ COMPREHENSIVE DEVELOPER INSTRUCTIONS
+📌 Project: Nebusis® Investor Portal
+A dedicated portal under the Nebusis® CommandDeck platform
+Accessible via: nebusis.com/investor
+
+🎯 STRATEGIC OBJECTIVES
+Provide potential investors with secure, tailored access to due diligence and pre-investment materials
+
+Offer current investors a live view into financials, performance, governance updates, and strategic progress
+
+Ensure transparent reporting and enforce professional-grade investor relations practices
+
+Showcase platform success through embedded metrics from the Nebusis® Business Suite
+
+🔧 1. ARCHITECTURE & PLATFORM INTEGRATION
+Use the existing Nebusis® portal infrastructure and tech stack
+
+Maintain consistency with /admin, /customer, and /partner modules
+
+Implement route: /investor
+
+Apply Nebusis® CommandDeck UI elements, authentication system, and session logic
+
+👥 2. USER TYPES & ROLE MANAGEMENT
+Role	Description
+potential_investor	Access to due diligence section only (with approval)
+confirmed_investor	Full access to reports, metrics, updates, and documentation
+investor_relations_admin	Uploads materials, manages users, responds to inquiries
+board_member	Higher privileges, access to governance materials and strategic data
+
+All access must be role-based and managed from the Admin Portal.
+
+🧱 3. CORE PORTAL MODULES
+3.1. Investor Dashboard
+Personalized summary screen based on role
+
+Key metrics:
+
+Current valuation and ownership (from Nebusis® SmartBooks®)
+
+Capital raised by round and investor type
+
+Fund deployment by category (e.g., technology, regional expansion)
+
+Live growth KPIs (from Nebusis® PerformanceTracker)
+
+3.2. Due Diligence Vault (for Potential Investors)
+Access to:
+
+Company overview and mission
+
+Nebusis® product ecosystem
+
+Executive bios and org chart
+
+Pitch decks, business plan, and 3–5 year financial projections (from Nebusis® SmartBooks®)
+
+Market analysis and competitive landscape
+
+Governance structure and compliance certifications (from Nebusis® ComplianceCore®)
+
+Legal registrations and contracts (from Nebusis® LegalFlow)
+
+Track file access per user
+
+Display legal disclaimer before file access
+
+3.3. Investor Reports & Financials
+Access real-time and historical data from Nebusis® SmartBooks®:
+
+Quarterly financials
+
+Gross revenue by market
+
+Profit margins
+
+Budget allocation
+
+Cash flow and burn rate
+
+Investor-specific returns or share class status
+
+Reports must be exportable (PDF, Excel)
+
+3.4. Strategy & Governance Updates
+Summaries of:
+
+Board meetings
+
+Strategic shifts
+
+New market entries
+
+Product release milestones
+
+Updates from Nebusis® ComplianceCore® audits and management reviews
+
+Embedded compliance dashboard for full transparency
+
+3.5. Document Center
+Controlled access to:
+
+Signed shareholder agreements
+
+Term sheets
+
+Subscription documents
+
+Corporate resolutions
+
+Tax forms and regulatory filings
+
+Document status tracking (signed/pending)
+
+All legal files managed via Nebusis® LegalFlow
+
+3.6. Events & Communications
+Event calendar showing:
+
+Quarterly investor meetings
+
+Webinars
+
+Product demonstrations
+
+Regional visits or strategy briefings
+
+RSVP management and video integration (Zoom, Teams, or embedded player)
+
+3.7. Investor Q&A and Feedback Center
+Secure messaging system:
+
+Submit questions
+
+View response history
+
+View FAQs
+
+Q&A logs searchable and filterable by topic (e.g., governance, product, finance)
+
+3.8. Nebusis® Business Suite Insight Panel
+Embed live performance metrics from the following apps:
+
+Nebusis® App	Metric Shown
+Nebusis® SmartBooks®	Live revenue, regional earnings, fund allocation
+Nebusis® ComplianceCore®	QMS status, audit results, risk status
+Nebusis® PerformanceTracker	KPI performance by market or product line
+Nebusis® Engage	Customer growth and acquisition funnel
+Nebusis® Client360	Total client count, retention rate, customer NPS
+Nebusis® KnowledgeCheck®	Internal training compliance and workforce competence
+
+This provides live, provable evidence of business traction.
+
+🔐 4. SECURITY & COMPLIANCE
+Use existing Nebusis® authentication stack with 2FA enabled
+
+RBAC must control access at the file and module level
+
+Download controls:
+
+Limit # of downloads
+
+Watermark sensitive documents
+
+Log file views and export history
+
+Add legal disclaimer or clickwrap for sensitive information access
+
+🎨 5. DESIGN & INTERFACE STANDARDS
+Use the full Nebusis® brand identity (colors, logo, fonts)
+
+Clean, professional layout suitable for institutional and private investors
+
+Investor-grade charting and data visualization tools
+
+Consistent UX with all other CommandDeck modules
+
+📈 6. ADDITIONAL FEATURES TO IMPLEMENT
+6.1. Investor Welcome Page
+Personalized welcome
+
+Summary of company stage, investment opportunity, or key updates
+
+Dynamic content depending on role (new vs. active investor)
+
+6.2. Funding Round Tracker
+Display:
+
+Open rounds (seed, A, bridge, etc.)
+
+Capital committed
+
+% goal achieved
+
+Key terms
+
+Visual progress bars and countdowns
+
+6.3. Investor Classification System
+Tag each user:
+
+VC Firm
+
+Family Office
+
+Strategic Investor
+
+Angel
+
+Use tags to customize dashboards or offer unique benefits
+
+6.4. Investor Perks Section
+Exclusive access to:
+
+Beta products
+
+Investor-only meetings
+
+Founder's updates
+
+Regional program invitations
+
+📊 7. ADMIN CAPABILITIES
+All managed through Admin Portal:
+
+Add/edit investors
+
+Upload or archive investor documents
+
+Push reports and updates
+
+Configure RBAC per investor or group
+
+View usage logs (portal visits, files accessed)
+
+Respond to Q&A
+

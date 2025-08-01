@@ -1,0 +1,97 @@
+Nebusis® Collaborator Portal
+Purpose: A structured digital environment for individual collaborators, aligned to their roles, assignments, and tools.
+
+🎯 CORE STRUCTURE AND FLOW
+The Collaborator Portal shall be organized in the following logical, role-based structure:
+
+1. 👤 Collaborator Profile
+Field	Description
+FullName	Collaborator’s legal or preferred name
+CollaboratorID	Unique system-generated ID
+Email	Primary email for communication and login
+Phone	(Optional) Contact number
+Region/Country	For tax/contractual relevance
+LanguagePreference	Interface language
+ActiveStatus	(Active, Onboarding, Inactive)
+
+2. 🧑‍💼 Role Information
+Field	Description
+RoleTitle	Example: Lead Auditor, Instructor, Project Consultant
+RoleType	Internal / External / Client-Assigned
+RoleLevel	(Standard, Senior, Specialized)
+DefaultCompensationType	Hourly / Daily / Per Assignment / Flat Fee
+DefaultRate	Example: $75/hour or $500/day
+Currency	USD / EUR / DOP / Local currency if applicable
+
+3. 📋 Assignments Linked to Role
+Each role can have multiple current or historical assignments.
+
+Field	Description
+AssignmentTitle	Project name, client, or internal task (e.g., “QSI ISO 9001 Audit - DR”)
+AssignmentID	Unique code
+ClientOrOrg	Nebusis®, QSI Academy, QSI Auditing, or external client
+AssignmentType	Internal / External
+StartDate / EndDate	Assignment duration
+AssignedSupervisor	Project manager, team lead, or client contact
+Status	Active / Completed / Upcoming
+AssignmentNotes	Scope, location, mode (remote/on-site), etc.
+
+4. 💵 Assignment-Based Compensation Adjustments
+Overrides the default compensation (if applicable).
+
+Field	Description
+AssignmentID	Links back to above
+AdjustedCompensationType	Hourly / Daily / Flat Fee
+AdjustedRate	e.g., $650/day for this assignment only
+AdditionalBenefits	(Per diem, lodging, travel reimbursement)
+PaymentTerms	30 days, upon deliverable, milestone-based, etc.
+
+5. 🧩 Applications & Tools Required for the Assignment
+List of Nebusis® applications or client systems the collaborator needs access to in order to execute their assignment.
+
+Field	Description
+AssignmentID	Links to a specific assignment
+ApplicationName	Example: Nebusis® SmartBooks®, Nebusis® Docs, Nebusis® KnowledgeCheck®, Client360
+AccessType	View, Edit, Submit, Review
+Status	Access Pending / Granted / Revoked
+AssignedDate	When access was activated
+SupportContact	For technical assistance or onboarding
+
+🛠️ Additional Features to Include in the Portal:
+✅ Deliverables Panel
+Upload and view documents required for the assignment
+
+Mark deliverables as complete
+
+View feedback from supervisors or clients
+
+✅ Time Entry (if applicable)
+Enter time in days or portions of days
+
+Link each time entry to the specific assignment
+
+Track time approval and status via Nebusis® SmartBooks®
+
+✅ Contractual Documents
+Signed agreements (view/download)
+
+NDA status
+
+Expiry dates and renewal notices
+
+Managed via Nebusis® LegalFlow
+
+✅ Training & Compliance
+Assignment-specific courses from Nebusis® KnowledgeCheck®
+
+QMS training compliance from Nebusis® ComplianceCore®
+
+🔐 Access and Security
+Collaborators only see assignments, roles, and tools relevant to them
+
+Admins can update roles, compensation, and tool access centrally
+
+All access must be auditable and role-specific
+
+✅ IMPLEMENTATION DIRECTIVE
+“The Nebusis® Collaborator Portal must be immediately restructured to reflect a role-based architecture. Each collaborator’s profile must clearly define their current role, standard compensation, active and historical assignments, any adjusted compensation tied to specific assignments, and all tools/applications needed to execute those assignments. This structure must support integration with the broader Nebusis® Business Suite and align with contractual service delivery to internal and external organizations, especially those within QSI Global Ventures.”
