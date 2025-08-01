@@ -1,14 +1,780 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1" />
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nebusis® - AI-Powered SaaS Solutions for Digital Transformation</title>
+    <meta name="description" content="Nebusis® offers comprehensive AI-powered SaaS solutions including 23 business applications, 11 sector-specific suites, and 16 certification programs for enterprise digital transformation.">
+    
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'nebusis': '#4A6FA5',
+                        'nebusis-primary': '#4A6FA5',
+                        'nebusis-dark': '#3A5A95',
+                    }
+                }
+            }
+        }
+    </script>
+    
+    <!-- Font Awesome for icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-  </head>
-  <body>
-    <div id="root"></div>
-    <script type="module" src="/src/main.tsx"></script>
-    <!-- This is a replit script which adds a banner on the top of the page when opened in development mode outside the replit environment -->
-    <script type="text/javascript" src="https://replit.com/public/js/replit-dev-banner.js"></script>
-  </body>
+    
+    <style>
+        /* Custom styles */
+        .gradient-bg {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        }
+        
+        .card-hover {
+            transition: all 0.3s ease;
+        }
+        
+        .card-hover:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+        }
+        
+        .btn-primary {
+            background: linear-gradient(135deg, #4A6FA5 0%, #3A5A95 100%);
+            border: none;
+            color: white;
+            padding: 12px 24px;
+            border-radius: 8px;
+            font-weight: 600;
+            transition: all 0.3s ease;
+        }
+        
+        .btn-primary:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 10px 20px rgba(74, 111, 165, 0.3);
+        }
+        
+        .btn-secondary {
+            background: white;
+            border: 2px solid #4A6FA5;
+            color: #4A6FA5;
+            padding: 10px 22px;
+            border-radius: 8px;
+            font-weight: 600;
+            transition: all 0.3s ease;
+        }
+        
+        .btn-secondary:hover {
+            background: #4A6FA5;
+            color: white;
+        }
+        
+        /* Carousel styles */
+        .carousel-container {
+            position: relative;
+            overflow: hidden;
+            border-radius: 16px;
+        }
+        
+        .carousel-slide {
+            display: none;
+            min-h-[500px];
+        }
+        
+        .carousel-slide.active {
+            display: flex;
+        }
+        
+        /* Status badges */
+        .status-live {
+            background: #10B981;
+            color: white;
+        }
+        
+        .status-coming-soon {
+            background: #F59E0B;
+            color: white;
+        }
+        
+        .status-beta {
+            background: #8B5CF6;
+            color: white;
+        }
+    </style>
+</head>
+<body class="font-sans">
+    <!-- Header -->
+    <header class="bg-white shadow-sm border-b">
+        <div class="bg-gray-50 border-b border-gray-200 py-2">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="flex justify-between items-center text-sm">
+                    <div class="flex items-center space-x-6">
+                        <div class="flex items-center space-x-2">
+                            <i class="fas fa-globe text-gray-600"></i>
+                            <span class="text-gray-600">Language: English</span>
+                        </div>
+                    </div>
+                    <div class="flex items-center space-x-4">
+                        <span class="text-gray-600">🇺🇸 Reston, Virginia, US</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <nav class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <div class="flex items-center">
+                    <img src="/assets/Nebusis Logo_1751572759736.png" alt="Nebusis Logo" class="h-8 w-auto">
+                </div>
+                
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="#home" class="text-gray-700 hover:text-nebusis font-medium">Home</a>
+                    <a href="#business-apps" class="text-gray-700 hover:text-nebusis font-medium">Business Apps</a>
+                    <a href="#sector-suites" class="text-gray-700 hover:text-nebusis font-medium">Sector Suites</a>
+                    <a href="#certifications" class="text-gray-700 hover:text-nebusis font-medium">Certifications</a>
+                    <a href="#digital-transformation" class="text-gray-700 hover:text-nebusis font-medium">Digital Transformation</a>
+                    <a href="#about" class="text-gray-700 hover:text-nebusis font-medium">About</a>
+                    <a href="#contact" class="text-gray-700 hover:text-nebusis font-medium">Contact</a>
+                </div>
+                
+                <div class="flex items-center space-x-4">
+                    <button class="btn-secondary">Request Demo</button>
+                    <button class="btn-primary">Get Started</button>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section with Carousel -->
+    <section id="home" class="relative bg-gradient-to-br from-gray-50 to-white py-20">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="carousel-container bg-white shadow-2xl">
+                <!-- Slide 1: Business Apps -->
+                <div class="carousel-slide active">
+                    <div class="flex flex-col lg:flex-row items-center">
+                        <div class="lg:w-1/2 p-12">
+                            <div class="mb-4">
+                                <span class="bg-blue-100 text-blue-800 px-3 py-1 rounded-full text-sm font-medium">Business Apps</span>
+                            </div>
+                            <h1 class="text-4xl lg:text-5xl font-bold text-gray-900 mb-6">
+                                23+ Intelligent Applications
+                            </h1>
+                            <p class="text-xl text-gray-600 mb-8">
+                                Comprehensive SaaS applications covering compliance, finance, HR, legal, operations, and communication for complete digital transformation.
+                            </p>
+                            <div class="flex flex-wrap gap-4 mb-8">
+                                <button class="btn-primary">Explore Business Apps</button>
+                                <button class="btn-secondary">View Demo</button>
+                            </div>
+                            <div class="grid grid-cols-2 gap-4">
+                                <div class="flex items-center space-x-2">
+                                    <i class="fas fa-check-circle text-green-500"></i>
+                                    <span class="text-sm text-gray-600">ComplianceOne Live</span>
+                                </div>
+                                <div class="flex items-center space-x-2">
+                                    <i class="fas fa-check-circle text-green-500"></i>
+                                    <span class="text-sm text-gray-600">22 Apps in Development</span>
+                                </div>
+                                <div class="flex items-center space-x-2">
+                                    <i class="fas fa-check-circle text-green-500"></i>
+                                    <span class="text-sm text-gray-600">AI-Powered Automation</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="lg:w-1/2">
+                            <img src="/assets/image_1753941573863.png" alt="Business Apps Professional Team" class="w-full h-full object-cover">
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Slide 2: Sector Suites -->
+                <div class="carousel-slide">
+                    <div class="flex flex-col lg:flex-row items-center">
+                        <div class="lg:w-1/2 p-12">
+                            <div class="mb-4">
+                                <span class="bg-green-100 text-green-800 px-3 py-1 rounded-full text-sm font-medium">Sector Suites</span>
+                            </div>
+                            <h1 class="text-4xl lg:text-5xl font-bold text-gray-900 mb-6">
+                                11 Industry-Specific Bundles
+                            </h1>
+                            <p class="text-xl text-gray-600 mb-8">
+                                Tailored application bundles designed for specific industries including healthcare, manufacturing, government, and retail sectors.
+                            </p>
+                            <div class="flex flex-wrap gap-4 mb-8">
+                                <button class="btn-primary">View Sector Suites</button>
+                                <button class="btn-secondary">Industry Solutions</button>
+                            </div>
+                            <div class="grid grid-cols-2 gap-4">
+                                <div class="flex items-center space-x-2">
+                                    <i class="fas fa-check-circle text-green-500"></i>
+                                    <span class="text-sm text-gray-600">Healthcare & Life Sciences</span>
+                                </div>
+                                <div class="flex items-center space-x-2">
+                                    <i class="fas fa-check-circle text-green-500"></i>
+                                    <span class="text-sm text-gray-600">Manufacturing & Industrial</span>
+                                </div>
+                                <div class="flex items-center space-x-2">
+                                    <i class="fas fa-check-circle text-green-500"></i>
+                                    <span class="text-sm text-gray-600">Financial Services</span>
+                                </div>
+                                <div class="flex items-center space-x-2">
+                                    <i class="fas fa-check-circle text-green-500"></i>
+                                    <span class="text-sm text-gray-600">Government & Public Sector</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="lg:w-1/2">
+                            <img src="/assets/image_1753941717640.png" alt="Sector Suites Healthcare Professional" class="w-full h-full object-cover">
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Slide 3: Digital Transformation -->
+                <div class="carousel-slide">
+                    <div class="flex flex-col lg:flex-row items-center">
+                        <div class="lg:w-1/2 p-12">
+                            <div class="mb-4">
+                                <span class="bg-purple-100 text-purple-800 px-3 py-1 rounded-full text-sm font-medium">Digital Transformation</span>
+                            </div>
+                            <h1 class="text-4xl lg:text-5xl font-bold text-gray-900 mb-6">
+                                Strategic Consulting Services
+                            </h1>
+                            <p class="text-xl text-gray-600 mb-8">
+                                Expert consulting for digital transformation, custom development, system integration, and strategic technology planning.
+                            </p>
+                            <div class="flex flex-wrap gap-4 mb-8">
+                                <button class="btn-primary">Learn About Services</button>
+                                <button class="btn-secondary">Consultation</button>
+                            </div>
+                            <div class="grid grid-cols-2 gap-4">
+                                <div class="flex items-center space-x-2">
+                                    <i class="fas fa-check-circle text-green-500"></i>
+                                    <span class="text-sm text-gray-600">Legacy System Modernization</span>
+                                </div>
+                                <div class="flex items-center space-x-2">
+                                    <i class="fas fa-check-circle text-green-500"></i>
+                                    <span class="text-sm text-gray-600">Digital Strategy Development</span>
+                                </div>
+                                <div class="flex items-center space-x-2">
+                                    <i class="fas fa-check-circle text-green-500"></i>
+                                    <span class="text-sm text-gray-600">Technology Architecture</span>
+                                </div>
+                                <div class="flex items-center space-x-2">
+                                    <i class="fas fa-check-circle text-green-500"></i>
+                                    <span class="text-sm text-gray-600">Process Automation</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="lg:w-1/2">
+                            <img src="/assets/image_1753941385938.png" alt="Digital Transformation Professional" class="w-full h-full object-cover">
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Carousel Navigation -->
+                <div class="absolute bottom-6 left-1/2 transform -translate-x-1/2 flex space-x-2">
+                    <button class="carousel-dot active w-3 h-3 rounded-full bg-white opacity-50" onclick="showSlide(0)"></button>
+                    <button class="carousel-dot w-3 h-3 rounded-full bg-white opacity-50" onclick="showSlide(1)"></button>
+                    <button class="carousel-dot w-3 h-3 rounded-full bg-white opacity-50" onclick="showSlide(2)"></button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Business Applications Section -->
+    <section id="business-apps" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-bold text-gray-900 mb-4">Business Applications</h2>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+                    Comprehensive suite of 23 intelligent applications designed to transform your business operations
+                </p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- ComplianceOne -->
+                <div class="bg-white rounded-xl shadow-lg p-6 card-hover border">
+                    <div class="flex items-center justify-between mb-4">
+                        <div class="w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center">
+                            <i class="fas fa-shield-alt text-blue-600 text-xl"></i>
+                        </div>
+                        <span class="status-live px-3 py-1 rounded-full text-xs font-medium">Live</span>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-900 mb-2">Nebusis® ComplianceOne</h3>
+                    <p class="text-gray-600 mb-4">Intelligent compliance management for regulated industries</p>
+                    <div class="space-y-2 mb-6">
+                        <div class="flex items-center text-sm text-gray-600">
+                            <i class="fas fa-check text-green-500 mr-2"></i>
+                            <span>ISO Standards Management</span>
+                        </div>
+                        <div class="flex items-center text-sm text-gray-600">
+                            <i class="fas fa-check text-green-500 mr-2"></i>
+                            <span>Automated Compliance Workflows</span>
+                        </div>
+                        <div class="flex items-center text-sm text-gray-600">
+                            <i class="fas fa-check text-green-500 mr-2"></i>
+                            <span>Audit Trail & Reporting</span>
+                        </div>
+                    </div>
+                    <div class="border-t pt-4">
+                        <div class="flex justify-between items-center mb-2">
+                            <span class="text-sm font-medium text-gray-700">Starter</span>
+                            <span class="text-lg font-bold text-nebusis">$1,250/mo</span>
+                        </div>
+                        <button class="w-full btn-primary">Learn More</button>
+                    </div>
+                </div>
+                
+                <!-- CyberWatch -->
+                <div class="bg-white rounded-xl shadow-lg p-6 card-hover border">
+                    <div class="flex items-center justify-between mb-4">
+                        <div class="w-12 h-12 bg-red-100 rounded-lg flex items-center justify-center">
+                            <i class="fas fa-lock text-red-600 text-xl"></i>
+                        </div>
+                        <span class="status-coming-soon px-3 py-1 rounded-full text-xs font-medium">Coming Soon</span>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-900 mb-2">Nebusis® CyberWatch</h3>
+                    <p class="text-gray-600 mb-4">Proactive cybersecurity for smart, scalable organizations</p>
+                    <div class="space-y-2 mb-6">
+                        <div class="flex items-center text-sm text-gray-600">
+                            <i class="fas fa-check text-green-500 mr-2"></i>
+                            <span>24/7 Security Monitoring</span>
+                        </div>
+                        <div class="flex items-center text-sm text-gray-600">
+                            <i class="fas fa-check text-green-500 mr-2"></i>
+                            <span>Threat Detection & Response</span>
+                        </div>
+                        <div class="flex items-center text-sm text-gray-600">
+                            <i class="fas fa-check text-green-500 mr-2"></i>
+                            <span>Vulnerability Management</span>
+                        </div>
+                    </div>
+                    <div class="border-t pt-4">
+                        <div class="flex justify-between items-center mb-2">
+                            <span class="text-sm font-medium text-gray-700">From</span>
+                            <span class="text-lg font-bold text-nebusis">$15/mo</span>
+                        </div>
+                        <button class="w-full btn-secondary">Notify Me</button>
+                    </div>
+                </div>
+                
+                <!-- SmartBooks -->
+                <div class="bg-white rounded-xl shadow-lg p-6 card-hover border">
+                    <div class="flex items-center justify-between mb-4">
+                        <div class="w-12 h-12 bg-green-100 rounded-lg flex items-center justify-center">
+                            <i class="fas fa-chart-line text-green-600 text-xl"></i>
+                        </div>
+                        <span class="status-coming-soon px-3 py-1 rounded-full text-xs font-medium">Coming Soon</span>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-900 mb-2">Nebusis® SmartBooks</h3>
+                    <p class="text-gray-600 mb-4">AI-powered financial management platform</p>
+                    <div class="space-y-2 mb-6">
+                        <div class="flex items-center text-sm text-gray-600">
+                            <i class="fas fa-check text-green-500 mr-2"></i>
+                            <span>Automated Bookkeeping</span>
+                        </div>
+                        <div class="flex items-center text-sm text-gray-600">
+                            <i class="fas fa-check text-green-500 mr-2"></i>
+                            <span>Financial Analytics</span>
+                        </div>
+                        <div class="flex items-center text-sm text-gray-600">
+                            <i class="fas fa-check text-green-500 mr-2"></i>
+                            <span>Tax Compliance</span>
+                        </div>
+                    </div>
+                    <div class="border-t pt-4">
+                        <div class="flex justify-between items-center mb-2">
+                            <span class="text-sm font-medium text-gray-700">From</span>
+                            <span class="text-lg font-bold text-nebusis">$15/mo</span>
+                        </div>
+                        <button class="w-full btn-secondary">Notify Me</button>
+                    </div>
+                </div>
+                
+                <!-- More applications would continue here... -->
+                <div class="bg-gray-50 rounded-xl p-6 card-hover border-2 border-dashed border-gray-300 flex flex-col items-center justify-center text-center">
+                    <div class="w-16 h-16 bg-gray-200 rounded-full flex items-center justify-center mb-4">
+                        <i class="fas fa-plus text-gray-400 text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-700 mb-2">20+ More Apps</h3>
+                    <p class="text-gray-500 mb-4">Discover our complete suite of business applications</p>
+                    <button class="btn-primary">View All Apps</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Certifications Section -->
+    <section id="certifications" class="py-20 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-bold text-gray-900 mb-4">Nebusis® Academy</h2>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+                    16 professional certification programs to advance your career in the digital age
+                </p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <!-- CPES Certification -->
+                <div class="bg-white rounded-xl shadow-lg p-6 card-hover">
+                    <div class="w-16 h-16 bg-gradient-to-br from-blue-500 to-purple-600 rounded-lg flex items-center justify-center mb-4">
+                        <i class="fas fa-robot text-white text-2xl"></i>
+                    </div>
+                    <h3 class="text-lg font-bold text-gray-900 mb-2">Certified Prompt Engineering Specialist (CPES)</h3>
+                    <p class="text-gray-600 text-sm mb-4">Master the art of AI prompt engineering</p>
+                    <div class="flex items-center justify-between text-sm text-gray-500 mb-4">
+                        <span>40 hours</span>
+                        <span class="bg-blue-100 text-blue-800 px-2 py-1 rounded-full">Intermediate</span>
+                    </div>
+                    <div class="border-t pt-4">
+                        <div class="flex justify-between items-center mb-3">
+                            <span class="text-2xl font-bold text-nebusis">$299</span>
+                            <span class="status-live px-2 py-1 rounded-full text-xs font-medium">Available</span>
+                        </div>
+                        <button class="w-full btn-primary text-sm">Enroll Now</button>
+                    </div>
+                </div>
+                
+                <!-- More certifications would continue here... -->
+                <div class="bg-white rounded-xl shadow-lg p-6 card-hover">
+                    <div class="w-16 h-16 bg-gradient-to-br from-green-500 to-teal-600 rounded-lg flex items-center justify-center mb-4">
+                        <i class="fas fa-shield-check text-white text-2xl"></i>
+                    </div>
+                    <h3 class="text-lg font-bold text-gray-900 mb-2">ISO Compliance Specialist</h3>
+                    <p class="text-gray-600 text-sm mb-4">Expert-level ISO standards management</p>
+                    <div class="flex items-center justify-between text-sm text-gray-500 mb-4">
+                        <span>60 hours</span>
+                        <span class="bg-red-100 text-red-800 px-2 py-1 rounded-full">Advanced</span>
+                    </div>
+                    <div class="border-t pt-4">
+                        <div class="flex justify-between items-center mb-3">
+                            <span class="text-2xl font-bold text-nebusis">$499</span>
+                            <span class="status-coming-soon px-2 py-1 rounded-full text-xs font-medium">Q2 2025</span>
+                        </div>
+                        <button class="w-full btn-secondary text-sm">Notify Me</button>
+                    </div>
+                </div>
+                
+                <div class="bg-white rounded-xl shadow-lg p-6 card-hover">
+                    <div class="w-16 h-16 bg-gradient-to-br from-orange-500 to-red-600 rounded-lg flex items-center justify-center mb-4">
+                        <i class="fas fa-chart-bar text-white text-2xl"></i>
+                    </div>
+                    <h3 class="text-lg font-bold text-gray-900 mb-2">Data Analytics Professional</h3>
+                    <p class="text-gray-600 text-sm mb-4">Advanced data analysis and visualization</p>
+                    <div class="flex items-center justify-between text-sm text-gray-500 mb-4">
+                        <span>45 hours</span>
+                        <span class="bg-yellow-100 text-yellow-800 px-2 py-1 rounded-full">Intermediate</span>
+                    </div>
+                    <div class="border-t pt-4">
+                        <div class="flex justify-between items-center mb-3">
+                            <span class="text-2xl font-bold text-nebusis">$399</span>
+                            <span class="status-coming-soon px-2 py-1 rounded-full text-xs font-medium">Q3 2025</span>
+                        </div>
+                        <button class="w-full btn-secondary text-sm">Notify Me</button>
+                    </div>
+                </div>
+                
+                <div class="bg-gray-50 rounded-xl p-6 card-hover border-2 border-dashed border-gray-300 flex flex-col items-center justify-center text-center">
+                    <div class="w-16 h-16 bg-gray-200 rounded-full flex items-center justify-center mb-4">
+                        <i class="fas fa-plus text-gray-400 text-2xl"></i>
+                    </div>
+                    <h3 class="text-lg font-bold text-gray-700 mb-2">13+ More Certifications</h3>
+                    <p class="text-gray-500 text-sm mb-4">Explore our complete certification catalog</p>
+                    <button class="btn-primary text-sm">View All</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Join Us Section -->
+    <section id="join-us" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-bold text-gray-900 mb-4">Join Our Team</h2>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+                    Be part of the future of AI-powered business solutions. We're looking for talented individuals across three collaboration types.
+                </p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Staff Positions -->
+                <div class="bg-white rounded-xl shadow-lg p-8 card-hover border">
+                    <div class="w-16 h-16 bg-blue-100 rounded-lg flex items-center justify-center mb-6">
+                        <i class="fas fa-users text-blue-600 text-2xl"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold text-gray-900 mb-4">Staff Positions</h3>
+                    <p class="text-gray-600 mb-6">Full-time and part-time remote positions across three functional areas</p>
+                    
+                    <div class="space-y-4 mb-8">
+                        <div>
+                            <h4 class="font-semibold text-gray-900 mb-2">Business Development</h4>
+                            <p class="text-sm text-gray-600">Sales, Marketing, Partnership roles</p>
+                        </div>
+                        <div>
+                            <h4 class="font-semibold text-gray-900 mb-2">Service Operations</h4>
+                            <p class="text-sm text-gray-600">Development, Support, Delivery roles</p>
+                        </div>
+                        <div>
+                            <h4 class="font-semibold text-gray-900 mb-2">Resource Administration</h4>
+                            <p class="text-sm text-gray-600">HR, Finance, Legal, Operations roles</p>
+                        </div>
+                    </div>
+                    
+                    <button class="w-full btn-primary">View Open Positions</button>
+                </div>
+                
+                <!-- Subcontracted Specialists -->
+                <div class="bg-white rounded-xl shadow-lg p-8 card-hover border">
+                    <div class="w-16 h-16 bg-green-100 rounded-lg flex items-center justify-center mb-6">
+                        <i class="fas fa-user-check text-green-600 text-2xl"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold text-gray-900 mb-4">Subcontracted Specialists</h3>
+                    <p class="text-gray-600 mb-6">Project-based collaborations for specialized expertise</p>
+                    
+                    <div class="space-y-4 mb-8">
+                        <div class="flex items-center text-sm text-gray-600">
+                            <i class="fas fa-check text-green-500 mr-2"></i>
+                            <span>Technical consultants</span>
+                        </div>
+                        <div class="flex items-center text-sm text-gray-600">
+                            <i class="fas fa-check text-green-500 mr-2"></i>
+                            <span>Industry experts</span>
+                        </div>
+                        <div class="flex items-center text-sm text-gray-600">
+                            <i class="fas fa-check text-green-500 mr-2"></i>
+                            <span>Specialized service providers</span>
+                        </div>
+                        <div class="flex items-center text-sm text-gray-600">
+                            <i class="fas fa-check text-green-500 mr-2"></i>
+                            <span>Flexible project terms</span>
+                        </div>
+                    </div>
+                    
+                    <button class="w-full btn-primary">Apply as Specialist</button>
+                </div>
+                
+                <!-- Business Partners -->
+                <div class="bg-white rounded-xl shadow-lg p-8 card-hover border">
+                    <div class="w-16 h-16 bg-purple-100 rounded-lg flex items-center justify-center mb-6">
+                        <i class="fas fa-handshake text-purple-600 text-2xl"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold text-gray-900 mb-4">Business Partners</h3>
+                    <p class="text-gray-600 mb-6">Strategic partnerships and revenue-sharing opportunities</p>
+                    
+                    <div class="space-y-4 mb-8">
+                        <div class="flex items-center text-sm text-gray-600">
+                            <i class="fas fa-check text-green-500 mr-2"></i>
+                            <span>Reseller partnerships</span>
+                        </div>
+                        <div class="flex items-center text-sm text-gray-600">
+                            <i class="fas fa-check text-green-500 mr-2"></i>
+                            <span>Technology integrations</span>
+                        </div>
+                        <div class="flex items-center text-sm text-gray-600">
+                            <i class="fas fa-check text-green-500 mr-2"></i>
+                            <span>Joint venture opportunities</span>
+                        </div>
+                        <div class="flex items-center text-sm text-gray-600">
+                            <i class="fas fa-check text-green-500 mr-2"></i>
+                            <span>Revenue sharing models</span>
+                        </div>
+                    </div>
+                    
+                    <button class="w-full btn-primary">Partner Inquiry</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-20 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12">
+                <div>
+                    <h2 class="text-4xl font-bold text-gray-900 mb-6">Get in Touch</h2>
+                    <p class="text-xl text-gray-600 mb-8">
+                        Ready to transform your business with AI-powered solutions? Contact our team for a personalized consultation.
+                    </p>
+                    
+                    <div class="space-y-6">
+                        <div class="flex items-center">
+                            <div class="w-12 h-12 bg-nebusis rounded-lg flex items-center justify-center mr-4">
+                                <i class="fas fa-map-marker-alt text-white"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-semibold text-gray-900">Address</h4>
+                                <p class="text-gray-600">12020 Sunrise Valley Dr, Reston, Virginia 20191, US</p>
+                            </div>
+                        </div>
+                        
+                        <div class="flex items-center">
+                            <div class="w-12 h-12 bg-nebusis rounded-lg flex items-center justify-center mr-4">
+                                <i class="fas fa-globe text-white"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-semibold text-gray-900">Website</h4>
+                                <p class="text-gray-600">www.nebusis.com</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="bg-white rounded-xl shadow-lg p-8">
+                    <form class="space-y-6">
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                            <div>
+                                <label class="block text-sm font-medium text-gray-700 mb-2">First Name</label>
+                                <input type="text" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:border-nebusis">
+                            </div>
+                            <div>
+                                <label class="block text-sm font-medium text-gray-700 mb-2">Last Name</label>
+                                <input type="text" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:border-nebusis">
+                            </div>
+                        </div>
+                        
+                        <div>
+                            <label class="block text-sm font-medium text-gray-700 mb-2">Email</label>
+                            <input type="email" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:border-nebusis">
+                        </div>
+                        
+                        <div>
+                            <label class="block text-sm font-medium text-gray-700 mb-2">Company</label>
+                            <input type="text" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:border-nebusis">
+                        </div>
+                        
+                        <div>
+                            <label class="block text-sm font-medium text-gray-700 mb-2">Message</label>
+                            <textarea rows="4" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:border-nebusis"></textarea>
+                        </div>
+                        
+                        <button type="submit" class="w-full btn-primary">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+            <div class="grid grid-cols-1 md:grid-cols-5 gap-8">
+                <!-- Company Info -->
+                <div class="col-span-1 md:col-span-2">
+                    <div class="flex items-center mb-4">
+                        <img src="/assets/Nebusis Logo_1751572759736.png" alt="Nebusis Logo" class="h-8 w-auto filter brightness-0 invert">
+                    </div>
+                    <div class="text-gray-400 space-y-2">
+                        <div class="flex items-center">
+                            <i class="fas fa-map-marker-alt mr-2"></i>
+                            <span class="text-sm">12020 Sunrise Valley Dr, Reston, Virginia 20191, US</span>
+                        </div>
+                        <div class="flex items-center">
+                            <i class="fas fa-globe mr-2"></i>
+                            <span class="text-sm">www.nebusis.com</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Quick Links -->
+                <div>
+                    <h4 class="font-semibold text-lg mb-4 flex items-center">
+                        <i class="fas fa-link mr-2"></i>
+                        Quick Links
+                    </h4>
+                    <ul class="space-y-2">
+                        <li><a href="#business-apps" class="text-gray-300 hover:text-white transition-colors">Business Apps</a></li>
+                        <li><a href="#sector-suites" class="text-gray-300 hover:text-white transition-colors">Sector Suites</a></li>
+                        <li><a href="#digital-transformation" class="text-gray-300 hover:text-white transition-colors">Digital Transformation</a></li>
+                        <li><a href="#certifications" class="text-gray-300 hover:text-white transition-colors">Training & Certification</a></li>
+                    </ul>
+                </div>
+
+                <!-- Support -->
+                <div>
+                    <h4 class="font-semibold text-lg mb-4 flex items-center">
+                        <i class="fas fa-question-circle mr-2"></i>
+                        Support
+                    </h4>
+                    <ul class="space-y-2">
+                        <li><a href="#contact" class="text-gray-300 hover:text-white transition-colors">Contact Us</a></li>
+                        <li><a href="#join-us" class="text-gray-300 hover:text-white transition-colors">Career Opportunities</a></li>
+                        <li><a href="#join-us" class="text-gray-300 hover:text-white transition-colors">Partnership Inquiries</a></li>
+                    </ul>
+                </div>
+
+                <!-- Connect -->
+                <div>
+                    <h4 class="font-semibold text-lg mb-4 flex items-center">
+                        <i class="fas fa-users mr-2"></i>
+                        Connect
+                    </h4>
+                    <ul class="space-y-2">
+                        <li><a href="#join-us" class="text-gray-300 hover:text-white transition-colors">Join Our Team</a></li>
+                        <li><a href="#contact" class="text-gray-300 hover:text-white transition-colors">Request Demo</a></li>
+                        <li><a href="#contact" class="text-gray-300 hover:text-white transition-colors">Get Started</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="border-t border-gray-800 mt-12 pt-8">
+                <div class="flex flex-col md:flex-row justify-between items-center">
+                    <p class="text-gray-400 text-sm">© 2024 Nebusis®. All rights reserved.</p>
+                    <div class="flex space-x-6 mt-4 md:mt-0">
+                        <a href="#" class="text-gray-400 hover:text-white text-sm">Privacy Policy</a>
+                        <a href="#" class="text-gray-400 hover:text-white text-sm">Terms of Use</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript for Carousel -->
+    <script>
+        let currentSlide = 0;
+        const slides = document.querySelectorAll('.carousel-slide');
+        const dots = document.querySelectorAll('.carousel-dot');
+        
+        function showSlide(index) {
+            // Hide all slides
+            slides.forEach(slide => slide.classList.remove('active'));
+            dots.forEach(dot => dot.classList.remove('active'));
+            
+            // Show selected slide
+            slides[index].classList.add('active');
+            dots[index].classList.add('active');
+            
+            currentSlide = index;
+        }
+        
+        // Auto-advance carousel
+        setInterval(() => {
+            currentSlide = (currentSlide + 1) % slides.length;
+            showSlide(currentSlide);
+        }, 5000);
+        
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+        
+        // Active dot styling
+        function updateActiveDot() {
+            dots.forEach(dot => dot.classList.remove('active'));
+            dots[currentSlide].classList.add('active');
+        }
+        
+        // Initialize
+        updateActiveDot();
+    </script>
+</body>
 </html>
